@@ -1,0 +1,49 @@
+{
+	"compilerOptions": {
+		"baseUrl": "",
+		"declaration": true,
+		"stripInternal": true,
+		"experimentalDecorators": true,
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"module": "es2015",
+		"moduleResolution": "node",
+		"paths": {
+			"@angular/core": [
+				"node_modules/@angular/core"
+			],
+			"@angular/common": [
+				"node_modules/@angular/common"
+			],
+			"rxjs/*": [
+				"node_modules/rxjs/*"
+			],
+			"@angular/http": [
+				"node_modules/@angular/http"
+			],
+			"angular2-virtual-scroll": [
+				"node_modules/angular2-virtual-scroll/dist"
+			],
+             "time-ago-pipe": [
+				 "node_modules/time-ago-pipe"
+			 ]
+		},
+		"rootDir": "src",
+		"outDir": "dist",
+		"sourceMap": true,
+		"inlineSources": true,
+		"target": "es5",
+		"skipLibCheck": true,
+		"lib": [
+			"es2015",
+			"dom"
+		]
+	},
+	"files": [
+		"./src/index.ts"
+	],
+	"angularCompilerOptions": {
+		"strictMetadataEmit": true,
+		"genDir": ".tmp"
+	}
+}
