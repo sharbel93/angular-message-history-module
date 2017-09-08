@@ -12,6 +12,7 @@ import * as i2 from '@angular/common';
 import * as i3 from '@angular/http';
 import * as i4 from '../../src/seed.service';
 import * as i5 from 'angular2-virtual-scroll/dist/virtual-scroll';
+import * as i6 from 'angular2-moment/moment.module';
 export const SeedModuleNgFactory:i0.NgModuleFactory<i1.SeedModule> = i0.ɵcmf(i1.SeedModule,
     ([] as any[]),(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
@@ -25,6 +26,7 @@ export const SeedModuleNgFactory:i0.NgModuleFactory<i1.SeedModule> = i0.ɵcmf(i1
               i4.SeedService,[i3.Http]),i0.ɵmpd(512,i2.CommonModule,i2.CommonModule,
               ([] as any[])),i0.ɵmpd(512,i3.HttpModule,i3.HttpModule,([] as any[])),
           i0.ɵmpd(512,i5.VirtualScrollModule,i5.VirtualScrollModule,([] as any[])),
-          i0.ɵmpd(512,i1.SeedModule,i1.SeedModule,([] as any[]))]);
+          i0.ɵmpd(512,i6.MomentModule,i6.MomentModule,([] as any[])),i0.ɵmpd(512,i1.SeedModule,
+              i1.SeedModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==

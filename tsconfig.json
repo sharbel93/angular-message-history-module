@@ -24,8 +24,8 @@
 			"angular2-virtual-scroll": [
 				"node_modules/angular2-virtual-scroll/dist"
 			],
-             "time-ago-pipe": [
-				 "node_modules/time-ago-pipe"
+             "anular2-moment": [
+				 "node_modules/angular2-moment"
 			 ]
 		},
 		"rootDir": "src",

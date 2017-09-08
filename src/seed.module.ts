@@ -4,16 +4,16 @@ import { HttpModule } from '@angular/http';
 import { SeedComponent } from './seed.component';
 import { SeedService } from './seed.service';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
-import { TimeAgoPipe } from 'time-ago-pipe';
+import { MomentModule } from 'angular2-moment';
 
 
 
 @NgModule({
 	declarations: [
-	  SeedComponent, TimeAgoPipe
+	  SeedComponent, 
 	],
 	imports: [
-	  CommonModule, HttpModule,  VirtualScrollModule
+	  CommonModule, HttpModule,  VirtualScrollModule, MomentModule
 	],
 	providers:[ SeedService ],
 	exports: [SeedComponent]

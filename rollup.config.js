@@ -15,6 +15,6 @@ export default {
 		'rxjs/add/observable/fromEvent': 'Rx.Observable',
 		'rxjs/add/observable/of': 'Rx.Observable',
 		'angular2-virtual-scroll/dist': 'virtual-scroll',
-		'time-ago-pipe': 'time-ago-pipe'
+		'angular2-moment': 'index'
 	}
 }

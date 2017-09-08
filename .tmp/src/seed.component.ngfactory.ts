@@ -7,8 +7,8 @@
 
 
 import * as i0 from '@angular/core';
-import * as i1 from 'time-ago-pipe/time-ago-pipe';
-import * as i2 from '@angular/common';
+import * as i1 from '@angular/common';
+import * as i2 from 'angular2-moment/time-ago.pipe';
 import * as i3 from '../../src/seed.component';
 import * as i4 from '../node_modules/angular2-virtual-scroll/dist/virtual-scroll.ngfactory';
 import * as i5 from 'angular2-virtual-scroll/dist/virtual-scroll';
@@ -16,107 +16,162 @@ import * as i6 from '../../src/seed.service';
 const styles_SeedComponent:any[] = ['virtual-scroll[_ngcontent-%COMP%], [virtualScroll][_ngcontent-%COMP%] {\n	  overflow: hidden;\n	  overflow-y: auto;\n	  border: 1px solid  rgb(209, 218, 223);\n	  height: 75vh;\n	  display: block;\n	}\n		.loader[_ngcontent-%COMP%] {\n			height: 4em;\n			display:block;\n			line-height:4em;\n			text-align:center;\n			position:relative;\n		   background-color:#F6F6F9;\n		  }\n		  .loader[_ngcontent-%COMP%]:before {\n			content: \' \';\n			position: absolute;\n			top: 0;\n			left: 0;\n			width: 20%;\n			height: 2px;\n			background: #0029FF;\n			animation: loader-animation 2s ease-out infinite;\n		  }\n	\n		  @keyframes loader-animation {\n			0% {\n			  transform: translate(0%);\n			}\n			100% {\n			  transform: translate(500%);\n			}\n		  }'];
 export const RenderType_SeedComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:0,
     styles:styles_SeedComponent,data:{}});
-function View_SeedComponent_1(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),51,'div',([] as any[]),
+function View_SeedComponent_2(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),2,'div',([] as any[]),
       (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n	  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      48,'div',[['class','card card-outline-info mb-1 border-0 '],['style','background-color:white']],
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n		  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      29,'div',[['class','card-header'],['style','background-color:white']],(null as any),
-      (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-      [' \n			  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),26,'div',[['class',
-      'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n			  \n				  '])),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','col-xs-5 col-sm-5 col-md-5']],(null as any),
-          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n					  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),8,'h6',[['class',
-          'card-title']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['  \n						  '])),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),5,'ul',[['class','list-inline']],(null as any),(null as any),
+      i0.ɵeld(0,(null as any),(null as any),1,'h6',([] as any[]),(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n							'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),2,'li',[['style',
-          'color:black']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i0.ɵted((null as any),['Time : ',''])),i0.ɵppd(2),
-      (_l()(),i0.ɵted((null as any),[' \n						  '])),(_l()(),i0.ɵted((null as any),
-          ['\n						'])),(_l()(),i0.ɵted((null as any),['\n				  '])),(_l()(),i0.ɵted((null as any),
-          ['\n	\n				  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),10,'div',
-          [['class','col-xs-4 col-sm-4 col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n					  '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),7,'h6',[['class','card-title']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['  \n						'])),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),4,'ul',[['class','list-inline']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n						  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'li',[['style',
-          'color:black']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i0.ɵted((null as any),['User :',' ',''])),(_l()(),
-          i0.ɵted((null as any),[' \n						'])),(_l()(),i0.ɵted((null as any),['\n					  '])),
-      (_l()(),i0.ɵted((null as any),['\n					'])),(_l()(),i0.ɵted((null as any),['\n			  '])),
-      (_l()(),i0.ɵted((null as any),['\n		  '])),(_l()(),i0.ɵted((null as any),['\n		'])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),10,'div',[['class','card-block']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n			'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-          7,'div',[['class','row'],['style','background-color:white']],(null as any),
-          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n			  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class',
-          'col-xs-12 col-sm-12 col-md-12']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n				  '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',[['class','card-text'],['style',
-          'color:black']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i0.ɵted((null as any),['',''])),(_l()(),i0.ɵted((null as any),
-          ['\n			  '])),(_l()(),i0.ɵted((null as any),['\n			'])),(_l()(),i0.ɵted((null as any),
-          ['\n			\n		  '])),(_l()(),i0.ɵted((null as any),['\n		  '])),(_l()(),i0.ɵeld(0,
-          (null as any),(null as any),2,'div',[['class','card-footer '],['style','background-color:white']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n			  ','\n			'])),i0.ɵpid(131072,i1.TimeAgoPipe,
-          [i0.ChangeDetectorRef,i0.NgZone]),(_l()(),i0.ɵted((null as any),['\n	  '])),
-      (_l()(),i0.ɵted((null as any),['\n		']))],(null as any),(_ck,_v) => {
-    const currVal_0:any = i0.ɵunv(_v,15,0,_ck(_v,16,0,i0.ɵnov((<any>_v.parent),0),
-        (_v.context.$implicit.ts * 1000),'medium'));
-    _ck(_v,15,0,currVal_0);
-    const currVal_1:any = _v.context.$implicit.user;
-    const currVal_2:any = _v.context.$implicit.username;
-    _ck(_v,28,0,currVal_1,currVal_2);
-    const currVal_3:any = _v.context.$implicit.text;
-    _ck(_v,42,0,currVal_3);
-    const currVal_4:any = i0.ɵunv(_v,48,0,i0.ɵnov(_v,49).transform((_v.context.$implicit.ts * 1000)));
-    _ck(_v,48,0,currVal_4);
+      ['','']))],(null as any),(_ck,_v) => {
+    const currVal_0:any = (<any>_v.parent).context.$implicit[0][0];
+    _ck(_v,2,0,currVal_0);
   });
 }
-function View_SeedComponent_2(_l:any):i0.ɵViewDefinition {
+function View_SeedComponent_3(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',[['class',
+      'card-text'],['style','color:black']],(null as any),(null as any),(null as any),
+      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['','','','','',
+      ' ']))],(null as any),(_ck,_v) => {
+    const currVal_0:any = (<any>_v.parent).context.$implicit[0][0];
+    const currVal_1:any = (<any>_v.parent).context.$implicit[0][1];
+    const currVal_2:any = (<any>_v.parent).context.$implicit[0][2];
+    const currVal_3:any = (<any>_v.parent).context.$implicit[0][3];
+    const currVal_4:any = (<any>_v.parent).context.$implicit[0][4];
+    _ck(_v,1,0,currVal_0,currVal_1,currVal_2,currVal_3,currVal_4);
+  });
+}
+function View_SeedComponent_1(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),74,'div',([] as any[]),
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+      71,'div',[['class','card card-outline-info mb-1 border-0 '],['style','background-color:white']],
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵted((null as any),['\n		'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+      30,'div',[['class','card-header'],['style','background-color:white']],(null as any),
+      (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+      [' \n				'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),27,'div',[['class',
+      'row ']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n						'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),24,'div',[['class','col-12 col-xs-12 col-sm-12 col-md-12']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n												'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),7,'div',[['class','row']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n													'])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class','col-8 col-xs-8 col-sm-8 col-md-8']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),[' '])),(_l()(),i0.ɵand(16777216,(null as any),
+          (null as any),1,(null as any),View_SeedComponent_2)),i0.ɵdid(16384,(null as any),
+          0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,'ngIf']},(null as any)),
+      (_l()(),i0.ɵted((null as any),[' '])),(_l()(),i0.ɵted((null as any),[' 										 \n												'])),
+      (_l()(),i0.ɵted((null as any),['\n								'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),12,'div',[['class','row']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n										'])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),9,'div',[['class','col-6 col-xs-6 col-sm-6 col-md-6']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n												'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),6,'h6',([] as any[]),(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          4,'small',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i0.ɵted((null as any),['',' at ',' • ',''])),i0.ɵppd(2),
+      i0.ɵppd(2),i0.ɵpid(131072,i2.TimeAgoPipe,[i0.ChangeDetectorRef,i0.NgZone]),(_l()(),
+          i0.ɵted((null as any),[' '])),(_l()(),i0.ɵted((null as any),['\n										'])),
+      (_l()(),i0.ɵted((null as any),['						 \n								'])),(_l()(),i0.ɵted((null as any),
+          [' \n						'])),(_l()(),i0.ɵted((null as any),['	\n							'])),(_l()(),i0.ɵted((null as any),
+          ['\n				'])),(_l()(),i0.ɵted((null as any),['\n	'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),28,'div',[['class','card-block']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n			'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),25,'div',[['class',
+          'row'],['style','background-color:white']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n				'])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),22,'div',[['class','col-12 col-xs-12 col-sm-12 col-md-12']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n								'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),1,'p',[['class','card-text'],['style','color:black']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          [' ',' '])),(_l()(),i0.ɵted((null as any),['\n										'])),(_l()(),i0.ɵeld(0,
+          (null as any),(null as any),1,'p',[['class','card-text'],['style','color:black']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),[' ',' '])),(_l()(),i0.ɵted((null as any),['\n										'])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',[['class','card-text'],['style',
+          'color:black']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i0.ɵted((null as any),['',' '])),(_l()(),i0.ɵted((null as any),
+          ['\n										'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',[['class',
+          'card-text'],['style','color:black']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['',' '])),(_l()(),
+          i0.ɵted((null as any),['\n										'])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),1,'p',[['class','card-text'],['style','color:black']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['',' '])),(_l()(),i0.ɵted((null as any),['\n										'])),(_l()(),i0.ɵeld(0,
+          (null as any),(null as any),1,'p',[['class','card-text'],['style','color:black']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),[' ',' '])),(_l()(),i0.ɵted((null as any),['\n						'])),
+      (_l()(),i0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_SeedComponent_3)),
+      i0.ɵdid(16384,(null as any),0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,
+          'ngIf']},(null as any)),(_l()(),i0.ɵted((null as any),['\n				'])),(_l()(),
+          i0.ɵted((null as any),['\n			'])),(_l()(),i0.ɵted((null as any),['\n			\n		'])),
+      (_l()(),i0.ɵted((null as any),['\n		'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          6,'div',[['class','card-footer '],['style','background-color:white']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n			'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),3,'div',[['class',
+          'col-8 col-xs-8 col-sm-8 col-md-8']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          2,'h6',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'small',
+          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),[' ',' •',''])),(_l()(),i0.ɵted((null as any),
+          ['\n			'])),(_l()(),i0.ɵted((null as any),['\n     '])),(_l()(),i0.ɵted((null as any),
+          [' \n	  ']))],(_ck,_v) => {
+    const currVal_0:any = (_v.context.$implicit[0].length > 4);
+    _ck(_v,15,0,currVal_0);
+    const currVal_10:any = (_v.context.$implicit[0].length == 1);
+    _ck(_v,61,0,currVal_10);
+  },(_ck,_v) => {
+    const currVal_1:any = i0.ɵunv(_v,25,0,_ck(_v,26,0,i0.ɵnov((<any>_v.parent),0),
+        (_v.context.$implicit[1] * 1000),'MMM dd'));
+    const currVal_2:any = i0.ɵunv(_v,25,1,_ck(_v,27,0,i0.ɵnov((<any>_v.parent),0),
+        (_v.context.$implicit[1] * 1000),'HH:mm'));
+    const currVal_3:any = i0.ɵunv(_v,25,2,i0.ɵnov(_v,28).transform((_v.context.$implicit[1] * 1000)));
+    _ck(_v,25,0,currVal_1,currVal_2,currVal_3);
+    const currVal_4:any = _v.context.$implicit[0][4];
+    _ck(_v,43,0,currVal_4);
+    const currVal_5:any = _v.context.$implicit[0][5];
+    _ck(_v,46,0,currVal_5);
+    const currVal_6:any = _v.context.$implicit[0][6];
+    _ck(_v,49,0,currVal_6);
+    const currVal_7:any = _v.context.$implicit[0][7];
+    _ck(_v,52,0,currVal_7);
+    const currVal_8:any = _v.context.$implicit[0][8];
+    _ck(_v,55,0,currVal_8);
+    const currVal_9:any = _v.context.$implicit[0][9];
+    _ck(_v,58,0,currVal_9);
+    const currVal_11:any = _v.context.$implicit[0][1];
+    const currVal_12:any = _v.context.$implicit[0][2];
+    _ck(_v,71,0,currVal_11,currVal_12);
+  });
+}
+function View_SeedComponent_4(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'div',[['class',
       'loader']],(null as any),(null as any),(null as any),(null as any),(null as any))),
       (_l()(),i0.ɵted((null as any),['Loading...']))],(null as any),(null as any));
 }
 export function View_SeedComponent_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[i0.ɵpid(0,i2.DatePipe,[i0.LOCALE_ID]),(_l()(),i0.ɵted((null as any),
+  return i0.ɵvid(0,[i0.ɵpid(0,i1.DatePipe,[i0.LOCALE_ID]),(_l()(),i0.ɵted((null as any),
       ['\n	'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'h2',([] as any[]),
       (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['',''])),(_l()(),i0.ɵted((null as any),['\n	\n	'])),(_l()(),
-      i0.ɵeld(0,(null as any),(null as any),13,'div',[['class','status']],(null as any),
+      i0.ɵted((null as any),['',''])),(_l()(),i0.ɵted((null as any),['\n	'])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),4,'div',[['class','status']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-      ['\n		Showing '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'span',[['class',
+      ['\n	Showing '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'span',[['class',
       'badge badge-pill badge-default']],(null as any),(null as any),(null as any),
-      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['',''])),(_l()(),
-      i0.ɵted((null as any),[' - '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      1,'span',[['class','badge badge-pill badge-default']],(null as any),(null as any),
-      (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['',
-      ''])),(_l()(),i0.ɵted((null as any),[' of '])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),1,'span',[['class','badge badge-pill badge-default']],(null as any),
-      (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-      ['',''])),(_l()(),i0.ɵted((null as any),['\n		'])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),1,'span',([] as any[]),(null as any),(null as any),(null as any),
-      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['(',' nodes)'])),
-      (_l()(),i0.ɵted((null as any),['\n	'])),(_l()(),i0.ɵted((null as any),['\n	\n	'])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),13,'virtual-scroll',[['style',
-          'height: 75vh; \n	display: block; \n	background-color: #D3D3D3;']],[[4,'overflow-y',
+      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['(',')'])),(_l()(),
+      i0.ɵted((null as any),[' messages\n  '])),(_l()(),i0.ɵted((null as any),['\n'])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),16,'virtual-scroll',[['style',
+          'height: 75vh; \ndisplay: block; background-color: #D3D3D3;']],[[4,'overflow-y',
           (null as any)]],[[(null as any),'end'],[(null as any),'update'],[(null as any),
           'scroll']],(_v,en,$event) => {
         var ad:boolean = true;
         var _co:i3.SeedComponent = _v.component;
         if (('scroll' === en)) {
-          const pd_0:any = ((<any>i0.ɵnov(_v,21).onScroll()) !== false);
+          const pd_0:any = ((<any>i0.ɵnov(_v,12).onScroll()) !== false);
           ad = (pd_0 && ad);
         }
         if (('end' === en)) {
@@ -131,39 +186,35 @@ export function View_SeedComponent_0(_l:any):i0.ɵViewDefinition {
       },i4.View_VirtualScrollComponent_0,i4.RenderType_VirtualScrollComponent)),i0.ɵdid(770048,
           (null as any),1,i5.VirtualScrollComponent,[i0.ElementRef],{items:[0,'items']},
           {update:'update',end:'end'}),i0.ɵqud(335544320,1,{containerElementRef:0}),
-      (_l()(),i0.ɵted(0,['\n	\n	'])),(_l()(),i0.ɵeld(0,(null as any),0,8,'div',[['class',
-          'col-xs-12 col-sm-12 col-md-12']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n	  '])),
-      (_l()(),i0.ɵted((null as any),['\n		'])),(_l()(),i0.ɵand(16777216,(null as any),
-          (null as any),1,(null as any),View_SeedComponent_1)),i0.ɵdid(802816,(null as any),
-          0,i2.NgForOf,[i0.ViewContainerRef,i0.TemplateRef,i0.IterableDiffers],{ngForOf:[0,
-              'ngForOf']},(null as any)),(_l()(),i0.ɵted((null as any),[' \n		'])),
-      (_l()(),i0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_SeedComponent_2)),
-      i0.ɵdid(16384,(null as any),0,i2.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,
-          'ngIf']},(null as any)),(_l()(),i0.ɵted((null as any),[' \n	'])),(_l()(),
-          i0.ɵted(0,['\n	'])),(_l()(),i0.ɵted((null as any),['\n	\n		\n	']))],(_ck,
-      _v) => {
+      (_l()(),i0.ɵted(0,['\n'])),(_l()(),i0.ɵeld(0,(null as any),0,8,'div',[['class',
+          'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n			'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          5,'div',[['class','col-12 col-xs-12 col-sm-12 col-md-12']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n'])),(_l()(),i0.ɵted((null as any),['		\n	'])),(_l()(),i0.ɵand(16777216,
+          (null as any),(null as any),1,(null as any),View_SeedComponent_1)),i0.ɵdid(802816,
+          (null as any),0,i1.NgForOf,[i0.ViewContainerRef,i0.TemplateRef,i0.IterableDiffers],
+          {ngForOf:[0,'ngForOf']},(null as any)),(_l()(),i0.ɵted((null as any),['\n	 '])),
+      (_l()(),i0.ɵted((null as any),['\n	'])),(_l()(),i0.ɵted(0,['\n	'])),(_l()(),
+          i0.ɵand(16777216,(null as any),0,1,(null as any),View_SeedComponent_4)),
+      i0.ɵdid(16384,(null as any),0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,
+          'ngIf']},(null as any)),(_l()(),i0.ɵted(0,[' \n\n'])),(_l()(),i0.ɵted((null as any),
+          ['\n\n		\n	']))],(_ck,_v) => {
     var _co:i3.SeedComponent = _v.component;
-    const currVal_6:any = _co.scrollItems;
-    _ck(_v,21,0,currVal_6);
-    const currVal_7:any = _co.scrollItems;
-    _ck(_v,28,0,currVal_7);
-    const currVal_8:any = _co.loading;
-    _ck(_v,31,0,currVal_8);
+    const currVal_3:any = _co.scrollItems;
+    _ck(_v,12,0,currVal_3);
+    const currVal_4:any = _co.scrollItems;
+    _ck(_v,21,0,currVal_4);
+    const currVal_5:any = _co.loading;
+    _ck(_v,26,0,currVal_5);
   },(_ck,_v) => {
     var _co:i3.SeedComponent = _v.component;
     const currVal_0:any = _co.title;
     _ck(_v,3,0,currVal_0);
-    const currVal_1:any = (((_co.indices == null)? (null as any): _co.indices.start) + 1);
+    const currVal_1:any = ((_co.myItems == null)? (null as any): _co.myItems.length);
     _ck(_v,8,0,currVal_1);
-    const currVal_2:any = ((_co.indices == null)? (null as any): _co.indices.end);
+    const currVal_2:any = (i0.ɵnov(_v,12).parentScroll? 'hidden': 'auto');
     _ck(_v,11,0,currVal_2);
-    const currVal_3:any = ((_co.scrollItems == null)? (null as any): _co.scrollItems.length);
-    _ck(_v,14,0,currVal_3);
-    const currVal_4:any = ((_co.scrollItems == null)? (null as any): _co.scrollItems.length);
-    _ck(_v,17,0,currVal_4);
-    const currVal_5:any = (i0.ɵnov(_v,21).parentScroll? 'hidden': 'auto');
-    _ck(_v,20,0,currVal_5);
   });
 }
 export function View_SeedComponent_Host_0(_l:any):i0.ɵViewDefinition {
@@ -176,4 +227,4 @@ export function View_SeedComponent_Host_0(_l:any):i0.ɵViewDefinition {
 }
 export const SeedComponentNgFactory:i0.ComponentFactory<i3.SeedComponent> = i0.ɵccf('seed-component',
     i3.SeedComponent,View_SeedComponent_Host_0,{items:'items'},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMiLCJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMuU2VlZENvbXBvbmVudC5odG1sIiwibmc6Ly8vaG9tZS9zaGFhbi9hbmd1bGFyLW1lc3NhZ2UtaGlzdG9yeS1tb2R1bGUvc3JjL3NlZWQuY29tcG9uZW50LnRzLlNlZWRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcblx0PGgyPnt7dGl0bGV9fTwvaDI+XG5cdFxuXHQ8ZGl2IGNsYXNzPVwic3RhdHVzXCI+XG5cdFx0U2hvd2luZyA8c3BhbiBjbGFzcz1cImJhZGdlIGJhZGdlLXBpbGwgYmFkZ2UtZGVmYXVsdFwiPnt7aW5kaWNlcz8uc3RhcnQgKyAxfX08L3NwYW4+IC0gPHNwYW4gY2xhc3M9XCJiYWRnZSBiYWRnZS1waWxsIGJhZGdlLWRlZmF1bHRcIj57e2luZGljZXM/LmVuZH19PC9zcGFuPiBvZiA8c3BhbiBjbGFzcz1cImJhZGdlIGJhZGdlLXBpbGwgYmFkZ2UtZGVmYXVsdFwiPnt7c2Nyb2xsSXRlbXM/Lmxlbmd0aH19PC9zcGFuPlxuXHRcdDxzcGFuPih7e3Njcm9sbEl0ZW1zPy5sZW5ndGh9fSBub2Rlcyk8L3NwYW4+XG5cdDwvZGl2PlxuXHRcblx0PHZpcnR1YWwtc2Nyb2xsXG5cdFtpdGVtc109XCJzY3JvbGxJdGVtc1wiIChlbmQpPVwiZmV0Y2hNb3JlKCRldmVudClcIiAodXBkYXRlKT1cImJ1ZmZlciA9ICRldmVudFwiIHN0eWxlPVwiaGVpZ2h0OiA3NXZoOyBcblx0ZGlzcGxheTogYmxvY2s7IFxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjRDNEM0QzO1wiPlxuXHRcblx0PGRpdiBjbGFzcz1cImNvbC14cy0xMiBjb2wtc20tMTIgY29sLW1kLTEyXCI+XG5cdCAgPCEtLSB1c2Ugc2Nyb2xsSXRlbXMgZm9yIHRlc3RpbmcgaW4gdGhlIG5nZm9yIC0tPlxuXHRcdDxkaXYgKm5nRm9yPVwibGV0IGl0ZW0gb2Ygc2Nyb2xsSXRlbXNcIiA+XG5cdCAgPGRpdiBjbGFzcz1cImNhcmQgY2FyZC1vdXRsaW5lLWluZm8gbWItMSBib3JkZXItMCBcIiAgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOndoaXRlXCI+XG5cdFx0ICA8ZGl2IGNsYXNzPVwiY2FyZC1oZWFkZXJcIiAgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOndoaXRlXCI+IFxuXHRcdFx0ICA8ZGl2IGNsYXNzPVwicm93XCI+XG5cdFx0XHQgIFxuXHRcdFx0XHQgIDxkaXYgY2xhc3M9XCJjb2wteHMtNSBjb2wtc20tNSBjb2wtbWQtNVwiPlxuXHRcdFx0XHRcdCAgPGg2IGNsYXNzPVwiY2FyZC10aXRsZVwiPiAgXG5cdFx0XHRcdFx0XHQgIDx1bCBjbGFzcz1cImxpc3QtaW5saW5lXCI+XG5cdFx0XHRcdFx0XHRcdDxsaSBzdHlsZT1cImNvbG9yOmJsYWNrXCI+VGltZSA6IHt7aXRlbS50cyAqIDEwMDAgfCBkYXRlOidtZWRpdW0nfX08L2xpPiBcblx0XHRcdFx0XHRcdCAgPC91bD5cblx0XHRcdFx0XHRcdDwvaDY+XG5cdFx0XHRcdCAgPC9kaXY+XG5cdFxuXHRcdFx0XHQgIDxkaXYgY2xhc3M9XCJjb2wteHMtNCBjb2wtc20tNCBjb2wtbWQtNFwiPlxuXHRcdFx0XHRcdCAgPGg2IGNsYXNzPVwiY2FyZC10aXRsZVwiPiAgXG5cdFx0XHRcdFx0XHQ8dWwgY2xhc3M9XCJsaXN0LWlubGluZVwiPlxuXHRcdFx0XHRcdFx0ICA8bGkgIHN0eWxlPVwiY29sb3I6YmxhY2tcIj5Vc2VyIDp7e2l0ZW0udXNlciB9fSB7e2l0ZW0udXNlcm5hbWV9fTwvbGk+IFxuXHRcdFx0XHRcdFx0PC91bD5cblx0XHRcdFx0XHQgIDwvaDY+XG5cdFx0XHRcdFx0PC9kaXY+XG5cdFx0XHQgIDwvZGl2PlxuXHRcdCAgPC9kaXY+XG5cdFx0PGRpdiBjbGFzcz1cImNhcmQtYmxvY2tcIj5cblx0XHRcdDxkaXYgY2xhc3M9XCJyb3dcIiAgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOndoaXRlXCI+XG5cdFx0XHQgIDxkaXYgIGNsYXNzPVwiY29sLXhzLTEyIGNvbC1zbS0xMiBjb2wtbWQtMTJcIj5cblx0XHRcdFx0ICA8cCBjbGFzcz1cImNhcmQtdGV4dFwiICBzdHlsZT1cImNvbG9yOmJsYWNrXCI+e3tpdGVtLnRleHR9fTwvcD5cblx0XHRcdCAgPC9kaXY+XG5cdFx0XHQ8L2Rpdj5cblx0XHRcdFxuXHRcdCAgPC9kaXY+XG5cdFx0ICA8ZGl2IGNsYXNzPVwiY2FyZC1mb290ZXIgXCIgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOndoaXRlXCI+XG5cdFx0XHQgIHt7aXRlbS50cyAqIDEwMDAgfCB0aW1lQWdvIH19XG5cdFx0XHQ8L2Rpdj5cblx0ICA8L2Rpdj5cblx0XHQ8L2Rpdj4gXG5cdFx0PGRpdiAqbmdJZj1cImxvYWRpbmdcIiBjbGFzcz1cImxvYWRlclwiPkxvYWRpbmcuLi48L2Rpdj4gXG5cdDwvZGl2PlxuXHQ8L3ZpcnR1YWwtc2Nyb2xsPlxuXHRcblx0XHRcblx0IiwiPHNlZWQtY29tcG9uZW50Pjwvc2VlZC1jb21wb25lbnQ+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNlRTtNQUFBLHdFQUF1QzthQUFBLDJCQUN0QztNQUFBO01BQUEsd0VBQW1GO2FBQUEsNEJBQ2xGO01BQUE7TUFBQSwwREFBeUQ7TUFBQSxlQUN4RDtNQUFBO01BQWlCLG9EQUVoQjtVQUFBO1VBQUEsMERBQXdDO1VBQUEsZ0JBQ3ZDO1VBQUE7TUFBdUIsaURBQ3RCO1VBQUE7VUFBQSw0Q0FBd0I7VUFBQSxnQkFDekI7VUFBQTtVQUFBLGdCQUF3QjtNQUE4QyxnREFDaEU7VUFBQSxlQUNGLDZDQUNDO1VBQUEsa0JBRU47VUFBQTtVQUFBLDhCQUF3QztNQUN2QztVQUFBO01BQXVCLCtDQUN4QjtVQUFBO1VBQUEsNENBQXdCO1VBQUEsaUJBQ3RCO1VBQUE7VUFBQSxnQkFBeUIsa0RBQTJDO2lCQUFBLCtCQUNqRTtNQUNDLDRDQUNEO01BQ0EsMkNBQ0Q7TUFDUjtVQUFBO01BQXdCLDBDQUN2QjtVQUFBO1VBQUEsMERBQWlEO1VBQUEsY0FDL0M7VUFBQTtVQUFBLDhCQUE0QztNQUMzQztVQUFBO1VBQUEsZ0JBQTBDLHdDQUFpQjtVQUFBLGNBQ3RELDBDQUNGO1VBQUEsa0JBRUMsMkNBQ047VUFBQTtVQUFBO01BQXlEO1VBQUEsa0NBRXBEO01BQ0E7SUF6QnNCO1FBQUE7SUFBQTtJQVFFO0lBQUE7SUFBQTtJQVNlO0lBQUE7SUFLYTtJQUFBOzs7O29CQUszRDtNQUFBO01BQW9DOzs7MERBbER0QztNQUFBLFVBQ0M7TUFBQSx3RUFBSTthQUFBLHlCQUFjLDJDQUVsQjthQUFBO1VBQUEsMERBQW9CO01BQUEsbUJBQ1g7TUFBQTtNQUFBLDhCQUE2Qyx3Q0FBNkI7YUFBQSx5QkFBRztNQUFBO01BQUEsNENBQTZDO01BQUEsTUFBdUIseUNBQUk7TUFBQTtNQUFBLDBEQUE2QztNQUFBLFVBQThCLHlDQUN4TztNQUFBO01BQUEsOEJBQU07TUFBc0Msd0NBQ3ZDO01BRU47VUFBQTtVQUFBO1VBQUE7UUFBQTtRQUFBO1FBQUE7VUFBQTtVQUFBO1FBQUE7UUFDc0I7VUFBQTtVQUFBO1FBQUE7UUFBMEI7VUFBQTtVQUFBO1FBQUE7UUFEaEQ7TUFBQSxpRkFBQTtVQUFBO1VBQUE7TUFHNEIsK0JBRTVCO1VBQUE7VUFBQSw4QkFBMkM7TUFDUSx5Q0FDbEQ7VUFBQSw0REFBQTtVQUFBO2NBQUEsMkJBa0NNO01BQ047YUFBQTtVQUFBLHdCQUFvRCx5Q0FDL0M7aUJBQUEsYUFDVzs7O0lBM0NqQjtJQURBLFlBQ0EsU0FEQTtJQU9NO0lBQUwsWUFBSyxTQUFMO0lBbUNLO0lBQUwsWUFBSyxTQUFMOzs7SUFqREc7SUFBQTtJQUdrRDtJQUFBO0lBQTZFO0lBQUE7SUFBd0U7SUFBQTtJQUNwTTtJQUFBO0lBR1A7SUFBQSxZQUFBLFNBQUE7Ozs7b0JDUkQ7TUFBQTs4QkFBQSxVQUFBO01BQUE7SUFBQTs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMiLCJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMuU2VlZENvbXBvbmVudC5odG1sIiwibmc6Ly8vaG9tZS9zaGFhbi9hbmd1bGFyLW1lc3NhZ2UtaGlzdG9yeS1tb2R1bGUvc3JjL3NlZWQuY29tcG9uZW50LnRzLlNlZWRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcblx0PGgyPnt7dGl0bGV9fTwvaDI+XG5cdDxkaXYgY2xhc3M9XCJzdGF0dXNcIj5cblx0U2hvd2luZyA8c3BhbiBjbGFzcz1cImJhZGdlIGJhZGdlLXBpbGwgYmFkZ2UtZGVmYXVsdFwiPih7e215SXRlbXM/Lmxlbmd0aH19KTwvc3Bhbj4gbWVzc2FnZXNcbiAgPC9kaXY+XG48dmlydHVhbC1zY3JvbGxcbltpdGVtc109XCJzY3JvbGxJdGVtc1wiIChlbmQpPVwiZmV0Y2hNb3JlKCRldmVudClcIiAodXBkYXRlKT1cImJ1ZmZlciA9ICRldmVudFwiIHN0eWxlPVwiaGVpZ2h0OiA3NXZoOyBcbmRpc3BsYXk6IGJsb2NrOyBiYWNrZ3JvdW5kLWNvbG9yOiAjRDNEM0QzO1wiPlxuPGRpdiBjbGFzcz1cInJvd1wiPlxuXHRcdFx0PGRpdiBjbGFzcz1cImNvbC0xMiBjb2wteHMtMTIgY29sLXNtLTEyIGNvbC1tZC0xMlwiPlxuPCEtLSB1c2Ugc2Nyb2xsSXRlbXMgZm9yIHRlc3RpbmcgaW4gdGhlIG5nZm9yIC0tPlx0XHRcblx0PGRpdiAqbmdGb3I9XCJsZXQgaXRlbSBvZiBzY3JvbGxJdGVtc1wiID5cbjxkaXYgY2xhc3M9XCJjYXJkIGNhcmQtb3V0bGluZS1pbmZvIG1iLTEgYm9yZGVyLTAgXCIgIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjp3aGl0ZVwiPlxuXHRcdDxkaXYgY2xhc3M9XCJjYXJkLWhlYWRlclwiICBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6d2hpdGVcIj4gXG5cdFx0XHRcdDxkaXYgY2xhc3M9XCJyb3cgXCI+XG5cdFx0XHRcdFx0XHQ8ZGl2IGNsYXNzPVwiY29sLTEyIGNvbC14cy0xMiBjb2wtc20tMTIgY29sLW1kLTEyXCI+XG5cdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHQ8ZGl2IGNsYXNzPVwicm93XCI+XG5cdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdDxkaXYgY2xhc3M9XCJjb2wtOCBjb2wteHMtOCBjb2wtc20tOCBjb2wtbWQtOFwiPiA8ZGl2ICpuZ0lmPVwiaXRlbVswXS5sZW5ndGggPiA0XCI+PGg2Pnt7aXRlbVswXVswXX19PC9oNj48L2Rpdj4gPC9kaXY+IFx0XHRcdFx0XHRcdFx0XHRcdFx0IFxuXHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0PC9kaXY+XG5cdFx0XHRcdFx0XHRcdFx0PGRpdiBjbGFzcz1cInJvd1wiPlxuXHRcdFx0XHRcdFx0XHRcdFx0XHQ8ZGl2IGNsYXNzPVwiY29sLTYgY29sLXhzLTYgY29sLXNtLTYgY29sLW1kLTZcIj5cblx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdDxoNj48c21hbGw+e3tpdGVtWzFdICogMTAwMCB8IGRhdGU6J01NTSBkZCd9fSBhdCB7e2l0ZW1bMV0gKiAxMDAwIHwgZGF0ZTonSEg6bW0nfX0gJmJ1bGw7IHt7aXRlbVsxXSogMTAwMCB8IGFtVGltZUFnbyB9fTwvc21hbGw+IDwvaDY+XG5cdFx0XHRcdFx0XHRcdFx0XHRcdDwvZGl2Plx0XHRcdFx0XHRcdCBcblx0XHRcdFx0XHRcdFx0XHQ8L2Rpdj4gXG5cdFx0XHRcdFx0XHQ8L2Rpdj5cdFxuXHRcdFx0XHRcdFx0XHQ8L2Rpdj5cblx0XHRcdFx0PC9kaXY+XG5cdDxkaXYgY2xhc3M9XCJjYXJkLWJsb2NrXCI+XG5cdFx0XHQ8ZGl2IGNsYXNzPVwicm93XCIgIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjp3aGl0ZVwiPlxuXHRcdFx0XHQ8ZGl2ICBjbGFzcz1cImNvbC0xMiBjb2wteHMtMTIgY29sLXNtLTEyIGNvbC1tZC0xMlwiPlxuXHRcdFx0XHRcdFx0XHRcdDxwIGNsYXNzPVwiY2FyZC10ZXh0XCIgIHN0eWxlPVwiY29sb3I6YmxhY2tcIiA+IHt7aXRlbVswXVs0XX19IDwvcD5cblx0XHRcdFx0XHRcdFx0XHRcdFx0PHAgY2xhc3M9XCJjYXJkLXRleHRcIiAgc3R5bGU9XCJjb2xvcjpibGFja1wiID4ge3tpdGVtWzBdWzVdfX0gPC9wPlxuXHRcdFx0XHRcdFx0XHRcdFx0XHQ8cCBjbGFzcz1cImNhcmQtdGV4dFwiICBzdHlsZT1cImNvbG9yOmJsYWNrXCIgPnt7aXRlbVswXVs2XX19IDwvcD5cblx0XHRcdFx0XHRcdFx0XHRcdFx0PHAgY2xhc3M9XCJjYXJkLXRleHRcIiAgc3R5bGU9XCJjb2xvcjpibGFja1wiID57e2l0ZW1bMF1bN119fSA8L3A+XG5cdFx0XHRcdFx0XHRcdFx0XHRcdDxwIGNsYXNzPVwiY2FyZC10ZXh0XCIgIHN0eWxlPVwiY29sb3I6YmxhY2tcIiA+e3tpdGVtWzBdWzhdfX0gPC9wPlxuXHRcdFx0XHRcdFx0XHRcdFx0XHQ8cCBjbGFzcz1cImNhcmQtdGV4dFwiICBzdHlsZT1cImNvbG9yOmJsYWNrXCIgPiB7e2l0ZW1bMF1bOV19fSA8L3A+XG5cdFx0XHRcdFx0XHQ8cCBjbGFzcz1cImNhcmQtdGV4dFwiICBzdHlsZT1cImNvbG9yOmJsYWNrXCIgKm5nSWY9XCJpdGVtWzBdLmxlbmd0aCA9PSAxIFwiPnt7aXRlbVswXVswXX19e3tpdGVtWzBdWzFdfX17e2l0ZW1bMF1bMl19fXt7aXRlbVswXVszXX19e3tpdGVtWzBdWzRdfX0gPC9wPlxuXHRcdFx0XHQ8L2Rpdj5cblx0XHRcdDwvZGl2PlxuXHRcdFx0XG5cdFx0PC9kaXY+XG5cdFx0PGRpdiBjbGFzcz1cImNhcmQtZm9vdGVyIFwiIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjp3aGl0ZVwiPlxuXHRcdFx0PGRpdiBjbGFzcz1cImNvbC04IGNvbC14cy04IGNvbC1zbS04IGNvbC1tZC04XCI+PGg2PjxzbWFsbD4ge3tpdGVtWzBdWzFdfX0gJmJ1bGw7e3tpdGVtWzBdWzJdfX08L3NtYWxsPjwvaDY+PC9kaXY+XG5cdFx0XHQ8L2Rpdj5cbiAgICAgPC9kaXY+IFxuXHQgIDwvZGl2PlxuXHQgPC9kaXY+XG5cdDwvZGl2PlxuXHQ8ZGl2ICpuZ0lmPVwibG9hZGluZ1wiIGNsYXNzPVwibG9hZGVyXCI+TG9hZGluZy4uLjwvZGl2PiBcblxuPC92aXJ0dWFsLXNjcm9sbD5cblxuXHRcdFxuXHQiLCI8c2VlZC1jb21wb25lbnQ+PC9zZWVkLWNvbXBvbmVudD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ2lCNEQ7TUFBQSx3RUFBZ0M7YUFBQTtVQUFBLDRDQUFJO01BQUE7SUFBQTtJQUFBOzs7O29CQW1CMUY7TUFBQTtNQUFBLDhCQUF1RTtNQUFBO0lBQUE7SUFBQTtJQUFBO0lBQUE7SUFBQTtJQUFBOzs7O29CQXpCNUU7TUFBQSx3RUFBdUM7YUFBQSx3QkFDeEM7TUFBQTtNQUFBLHdFQUFtRjthQUFBLDBCQUNqRjtNQUFBO01BQUEsMERBQXlEO01BQUEsY0FDdkQ7TUFBQTtNQUFrQiw2Q0FDaEI7VUFBQTtVQUFBO01BQWtELG1EQUM1QztVQUFBO1VBQUEsOEJBQWlCO01BQ2hCO1VBQUE7TUFBOEMsc0NBQUM7VUFBQSw0REFBQTtVQUFBO01BQTZELHNDQUFPO01BQzlHLCtDQUNWO1VBQUE7VUFBQSw4QkFBaUI7TUFDZjtVQUFBO01BQThDLG1EQUM1QztVQUFBO1VBQUEsOEJBQUk7VUFBQTtVQUFBLGdCQUFPO2FBQUEsb0VBQXFIO2lCQUFBLHVCQUFNO01BQ2xJLHNEQUNGO1VBQUEsZ0JBQ0YsK0NBQ0M7VUFBQSxhQUNILHdDQUNUO1VBQUE7VUFBQSw0Q0FBd0I7VUFBQSxZQUN0QjtVQUFBO1VBQUEsOEJBQWlEO01BQ2hEO1VBQUE7TUFBbUQsK0NBQy9DO1VBQUE7VUFBQSwwREFBMkM7VUFBQSxZQUFvQixpREFDN0Q7VUFBQTtVQUFBO01BQTJDLDBDQUFvQjtNQUMvRDtVQUFBO1VBQUEsZ0JBQTJDLHlDQUFtQjtVQUFBLG1CQUM5RDtVQUFBO1VBQUEsOEJBQTJDLHlDQUFtQjtpQkFBQSxrQ0FDOUQ7VUFBQTtVQUFBLDBEQUEyQztVQUFBLFdBQW1CLGlEQUM5RDtVQUFBO1VBQUE7TUFBMkMsMENBQW9CO01BQ25FO2FBQUE7VUFBQSx3QkFBa0osMkNBQzlJO2lCQUFBLDJCQUNEO01BRUQseUNBQ047VUFBQTtVQUFBLDBEQUF5RDtVQUFBLFlBQ3hEO1VBQUE7VUFBQSw4QkFBOEM7VUFBQTtVQUFBLGdCQUFJO1VBQUE7TUFBTyw4Q0FBdUQ7VUFBQSxZQUMxRyw0Q0FDRTtVQUFBO0lBM0JzRDtJQUFMLFlBQUssU0FBTDtJQW1CWjtJQUExQyxZQUEwQyxVQUExQzs7SUFmaUI7UUFBQTtJQUFBO1FBQUE7SUFBQTtJQUFBO0lBUzRCO0lBQUE7SUFDRTtJQUFBO0lBQ0E7SUFBQTtJQUNBO0lBQUE7SUFDQTtJQUFBO0lBQ0E7SUFBQTtJQU9PO0lBQUE7SUFBQTs7OztvQkFNM0Q7TUFBQTtNQUFvQzs7OzBEQWhEckM7TUFBQSxVQUNDO01BQUEsd0VBQUk7YUFBQSx5QkFBYyx3Q0FDbEI7YUFBQTtVQUFBLDBEQUFvQjtNQUFBLGtCQUNaO01BQUE7TUFBQSw4QkFBNkMsMENBQTRCO2FBQUEsbUNBQzFFO01BQ1I7VUFBQTtVQUFBO1VBQUE7UUFBQTtRQUFBO1FBQUE7VUFBQTtVQUFBO1FBQUE7UUFDc0I7VUFBQTtVQUFBO1FBQUE7UUFBMEI7VUFBQTtVQUFBO1FBQUE7UUFEaEQ7TUFBQSxpRkFBQTtVQUFBO1VBQUE7TUFFNEMsMkJBQzVDO1VBQUE7TUFBaUIsMENBQ2Q7VUFBQTtVQUFBLDBEQUFrRDtVQUFBLFNBQ0osMENBQ2hEO1VBQUEsMEVBQUE7VUFBQTtVQUFBLHVDQWtDUTtNQUNELHdDQUNELDRCQUNOO2lCQUFBO2FBQUE7VUFBQSx3QkFBb0QsOEJBRXBDO1VBQUE7O0lBNUNqQjtJQURBLFlBQ0EsU0FEQTtJQU1NO0lBQUwsWUFBSyxTQUFMO0lBcUNLO0lBQUwsWUFBSyxTQUFMOzs7SUEvQ0k7SUFBQTtJQUVpRDtJQUFBO0lBRXREO0lBQUEsWUFBQSxTQUFBOzs7O29CQ0xBO01BQUE7OEJBQUEsVUFBQTtNQUFBO0lBQUE7Ozs7In0=

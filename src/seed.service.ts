@@ -7,9 +7,7 @@ import 'rxjs/add/operator/catch';
 import { Observable } from 'rxjs/Rx';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
-// 0mport { Msg } from '../domain/amrs';
-// const url = 'http://localhost:3000/messages';
-const BASE_URL = 'http://localhost:8000/slackmessages/1000/1501770200.477992';
+const BASE_URL = 'http://localhost:8002/etl/poc-user-feedback/1000/1501770200.477992';
 
 
 @Injectable()
