@@ -26,6 +26,9 @@
 			],
              "anular2-moment": [
 				 "node_modules/angular2-moment"
+			 ],
+			 "angular2-markdown":[
+				 "node_modules/angular2-markdown"
 			 ]
 		},
 		"rootDir": "src",

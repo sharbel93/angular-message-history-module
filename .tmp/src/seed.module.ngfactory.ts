@@ -8,25 +8,32 @@
 
 import * as i0 from '@angular/core';
 import * as i1 from '../../src/seed.module';
-import * as i2 from '@angular/common';
-import * as i3 from '@angular/http';
-import * as i4 from '../../src/seed.service';
-import * as i5 from 'angular2-virtual-scroll/dist/virtual-scroll';
-import * as i6 from 'angular2-moment/moment.module';
+import * as i2 from '../node_modules/angular2-markdown/markdown/markdown.component.ngfactory';
+import * as i3 from '@angular/common';
+import * as i4 from '@angular/http';
+import * as i5 from 'angular2-markdown/markdown/markdown.service';
+import * as i6 from 'angular2-markdown/markdown/markdown.config';
+import * as i7 from '../../src/seed.service';
+import * as i8 from 'angular2-virtual-scroll/dist/virtual-scroll';
+import * as i9 from 'angular2-moment/moment.module';
+import * as i10 from 'angular2-markdown/markdown/markdown.module';
 export const SeedModuleNgFactory:i0.NgModuleFactory<i1.SeedModule> = i0.ɵcmf(i1.SeedModule,
     ([] as any[]),(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
-          [[8,([] as any[])],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),i0.ɵmpd(4608,
-          i2.NgLocalization,i2.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(4608,i3.BrowserXhr,
-          i3.BrowserXhr,([] as any[])),i0.ɵmpd(4608,i3.ResponseOptions,i3.BaseResponseOptions,
-          ([] as any[])),i0.ɵmpd(5120,i3.XSRFStrategy,i3.ɵb,([] as any[])),i0.ɵmpd(4608,
-          i3.XHRBackend,i3.XHRBackend,[i3.BrowserXhr,i3.ResponseOptions,i3.XSRFStrategy]),
-          i0.ɵmpd(4608,i3.RequestOptions,i3.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,
-              i3.Http,i3.ɵc,[i3.XHRBackend,i3.RequestOptions]),i0.ɵmpd(4608,i4.SeedService,
-              i4.SeedService,[i3.Http]),i0.ɵmpd(512,i2.CommonModule,i2.CommonModule,
-              ([] as any[])),i0.ɵmpd(512,i3.HttpModule,i3.HttpModule,([] as any[])),
-          i0.ɵmpd(512,i5.VirtualScrollModule,i5.VirtualScrollModule,([] as any[])),
-          i0.ɵmpd(512,i6.MomentModule,i6.MomentModule,([] as any[])),i0.ɵmpd(512,i1.SeedModule,
-              i1.SeedModule,([] as any[]))]);
+          [[8,[i2.MarkdownComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
+          i0.ɵmpd(4608,i3.NgLocalization,i3.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(4608,
+              i4.BrowserXhr,i4.BrowserXhr,([] as any[])),i0.ɵmpd(4608,i4.ResponseOptions,
+              i4.BaseResponseOptions,([] as any[])),i0.ɵmpd(5120,i4.XSRFStrategy,i4.ɵb,
+              ([] as any[])),i0.ɵmpd(4608,i4.XHRBackend,i4.XHRBackend,[i4.BrowserXhr,
+              i4.ResponseOptions,i4.XSRFStrategy]),i0.ɵmpd(4608,i4.RequestOptions,
+              i4.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,i4.Http,i4.ɵc,[i4.XHRBackend,
+              i4.RequestOptions]),i0.ɵmpd(4608,i5.MarkdownService,i5.MarkdownService,
+              [i4.Http]),i0.ɵmpd(4608,i6.MarkdownConfig,i6.MarkdownConfig,([] as any[])),
+          i0.ɵmpd(4608,i7.SeedService,i7.SeedService,[i4.Http]),i0.ɵmpd(512,i3.CommonModule,
+              i3.CommonModule,([] as any[])),i0.ɵmpd(512,i4.HttpModule,i4.HttpModule,
+              ([] as any[])),i0.ɵmpd(512,i8.VirtualScrollModule,i8.VirtualScrollModule,
+              ([] as any[])),i0.ɵmpd(512,i9.MomentModule,i9.MomentModule,([] as any[])),
+          i0.ɵmpd(512,i10.MarkdownModule,i10.MarkdownModule,([] as any[])),i0.ɵmpd(512,
+              i1.SeedModule,i1.SeedModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

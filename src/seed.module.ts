@@ -5,7 +5,7 @@ import { SeedComponent } from './seed.component';
 import { SeedService } from './seed.service';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
 import { MomentModule } from 'angular2-moment';
-
+import { MarkdownModule } from 'angular2-markdown';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { MomentModule } from 'angular2-moment';
 	  SeedComponent, 
 	],
 	imports: [
-	  CommonModule, HttpModule,  VirtualScrollModule, MomentModule
+	  CommonModule, HttpModule,  VirtualScrollModule, MomentModule, MarkdownModule.forRoot()
 	],
 	providers:[ SeedService ],
 	exports: [SeedComponent]

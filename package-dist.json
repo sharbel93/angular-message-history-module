@@ -1,6 +1,6 @@
 {
 	"name": "angular-message-history-module",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Wot!",
 	"main": "bundles/angular-message-history-module.umd.min.js",
 	"module": "index.js",
@@ -29,8 +29,9 @@
 		"@angular/core": "^4.3.6",
 		"@angular/http": "^4.3.6",
 		"@angular/platform-browser": "^4.3.6",
-		"angular2-virtual-scroll": "^0.2.1",
-		"angular2-moment": "^1.7.0 " ,
+		"angular2-markdown": "^1.6.0",
+		"angular2-moment": "^1.7.0 ",
+		"angular2-virtual-scroll": "^0.2.2",
 		"rxjs": "^5.4.3",
 		"zone.js": "^0.8.17"
 	}

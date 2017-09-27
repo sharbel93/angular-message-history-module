@@ -15,6 +15,7 @@ export default {
 		'rxjs/add/observable/fromEvent': 'Rx.Observable',
 		'rxjs/add/observable/of': 'Rx.Observable',
 		'angular2-virtual-scroll/dist': 'virtual-scroll',
-		'angular2-moment': 'index'
+		'angular2-moment': 'index',
+		'angular2-markdown': 'angular2-markdown'
 	}
 }
