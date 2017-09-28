@@ -12,7 +12,7 @@ export interface MsgSlack {
 @Component({
 	selector: 'seed-component',
 	template: `
-	< <virtual-scroll
+	 <virtual-scroll
   [items]="buffer"  (update)="scrollItems = $event" (end)="fetchMore($event)" style="height: 75vh; 
   display: block; background-color: #D3D3D3;">
   
