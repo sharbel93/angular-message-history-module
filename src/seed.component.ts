@@ -15,39 +15,30 @@ export interface MsgSlack {
 	 <virtual-scroll
   [items]="buffer"  (update)="scrollItems = $event" (end)="fetchMore($event)" style="height: 75vh; 
   display: block; background-color: #D3D3D3;">
-  
+ 
 <div class="row">
 <div class="col-12 col-xs-12 col-sm-12 col-md-12">
-        <div *ngFor="let item of myItems">
-        <div class="card card-outline-info mb-1 border-0 "  style="background-color:white">
-        <div class="card-header" style="background-color:white" Markdown>
+        <div  *ngFor="let item of myItems">
+            <div class="card"  style="background-color:white" Markdown>
                 <div class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12">
-                        <h6><small><strong>{{item.ts * 1000 | date: 'fullDate'}}</strong></small></h6>
+                                        <h5><small><strong>{{item.ts * 1000 | date: 'fullDate'}}</strong></small></h5>
                         </div>
                 </div>
-               
-        </div>
-        <div class="card-block" style="background-color:white" Markdown>
-        <ul class="list-group">
-              <li class="list-group-item">
-                      <div class="col-0 col-xs-0 col-sm-0 col-md-0">
-                              <h6><small><strong>{{item.ts * 1000 | amDateFormat:'hh:mmA'}}</strong></small></h6>
-                        </div>
-                        <div class="col-10 col-xs-10 col-sm-10 col-md-10">
-                 <p  class="card-text">{{item.text}}</p>
-                        </div>
-             </li>
-        </ul>
-       </div>
+<div class="row">
+                        <div class="col-3 col-xs-3 col-sm-3 col-md-3">
+                                <h6 class="text-left"><small><strong>{{item.ts * 1000 | amDateFormat:'hh:mmA'}}</strong></small></h6>
+                          </div>
+                          <div class="col-8 col-xs-8 col-sm-8 col-md-8">
+                   <p  class="text">{{item.text}}</p>
+                          </div>
+</div>
      </div>   
 </div>
-</div> 
 </div>
-<div *ngIf="loading" class="loader">Loading...</div>
+</div>
 </virtual-scroll>
       
-
 		
 	`,
 	styles: [`
@@ -85,16 +76,19 @@ export interface MsgSlack {
             transform: translate(500%);
           }
         }
-  
-        .card-text {
+        .text {
           overflow: hidden; 
           white-space: nowrap;
           text-overflow: ellipsis;
         }
-        .card-text:hover {
+        .text:hover {
           white-space: normal;
           height:auto;
          overflow: visible;
+        }
+        .row {
+          margin-bottom: 15px;
+          
         }
 	`]
 })

@@ -1,7 +1,7 @@
 {
   "name": "angular-message-history-module",
-  "version": "1.1.0",
-  "description": "An angular 2 module for scrolling messages history from a given Slack Channel",
+  "version": "1.1.2",
+  "description": "virtual scrollmessages based on slack messages history",
   "keywords": [
     "angular 2",
     "scroll"

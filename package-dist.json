@@ -1,7 +1,7 @@
 {
 	"name": "angular-message-history-module",
-	"version": "1.1.0",
-	"description": "Wot!",
+	"version": "1.1.2",
+	"description": "virtual scrollmessages based on slack messages history",
 	"main": "bundles/angular-message-history-module.umd.min.js",
 	"module": "index.js",
 	"typings": "index.d.ts",
