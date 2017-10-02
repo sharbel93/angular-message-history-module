@@ -12,33 +12,47 @@ export interface MsgSlack {
 @Component({
 	selector: 'seed-component',
 	template: `
-	 <virtual-scroll
-  [items]="buffer"  (update)="scrollItems = $event" (end)="fetchMore($event)" style="height: 75vh; 
-  display: block; background-color: #D3D3D3;">
- 
-<div class="row">
-<div class="col-12 col-xs-12 col-sm-12 col-md-12">
-        <div  *ngFor="let item of myItems">
-            <div class="card"  style="background-color:white" Markdown>
-                <div class="row">
-                        <div class="col-12 col-xs-12 col-sm-12 col-md-12">
-                                        <h5><small><strong>{{item.ts * 1000 | date: 'fullDate'}}</strong></small></h5>
-                        </div>
+	 <div class="container rounded" style="border: 2px solid black; margin-top: 20px;">
+
+        <div class="row" style="margin-top: 10px; margin-bottom: 50px;" >
+                <div class="col-12 col-md-12 col-sm-12">
+                               <button type="button" class="btn btn-primary " id="refresh_btn"  (click)="refresh()">Refresh</button>
                 </div>
+        </div>
+
+        <div class="row">
+                <div class="col-12 col-md-12 col-sm-12">
+                                <virtual-scroll
+                                [items]="buffer"  (update)="scrollItems = $event" (change)="indices = $event" (end)="fetchMore($event)"  style="height: 75vh; 
+                                display: block; background-color: #D3D3D3;  ">  
+                                
 <div class="row">
-                        <div class="col-3 col-xs-3 col-sm-3 col-md-3">
-                                <h6 class="text-left"><small><strong>{{item.ts * 1000 | amDateFormat:'hh:mmA'}}</strong></small></h6>
-                          </div>
-                          <div class="col-8 col-xs-8 col-sm-8 col-md-8">
-                   <p  class="text">{{item.text}}</p>
-                          </div>
-</div>
-     </div>   
-</div>
-</div>
-</div>
-</virtual-scroll>
-      
+                <div class="col-12 col-xs-12 col-sm-12 col-md-12">
+                        <div *ngFor="let item of myItems">
+                        <div class="card"  style="background-color:white" Markdown>
+                                <div class="row">
+                                        <div class="col-12 col-xs-12 col-sm-12 col-md-12">
+                                                        <h5><small><strong>{{item.ts * 1000 | date: 'fullDate'}}</strong></small></h5>
+                                        </div>
+                                </div>
+        <div class="row">
+                                        <div class="col-3 col-xs-3 col-sm-3 col-md-3">
+                                                <h6 class="text-left"><small><strong>{{item.ts * 1000 | amDateFormat:'hh:mmA'}}</strong></small></h6>
+                                          </div>
+                                          <div class="col-8 col-xs-8 col-sm-8 col-md-8">
+                                   <p  class="text">{{item.text}}</p>
+                                          </div>
+                </div>
+                     </div>   
+                </div>
+                </div>
+                </div>
+                <div *ngIf="loading" class="loader">Loading...</div>
+        </virtual-scroll> 
+                </div>
+        </div>
+
+        </div>
 		
 	`,
 	styles: [`
@@ -90,6 +104,11 @@ export interface MsgSlack {
           margin-bottom: 15px;
           
         }
+
+        #refresh_btn {
+          position: absolute;
+          right: 16px;
+        }
 	`]
 })
 
@@ -104,12 +123,20 @@ export class SeedComponent implements  OnChanges{
 		protected timer: any;
 		protected loading: boolean;
 		constructor(private _service: SeedService) {
-			this._service.getScrollMessages()
-			.subscribe(res => {
-				this.scrollItems = res.messages;
-				this.myItems = res.messages;
-			});
-	}
+		this.slackMsg();
+  }
+  
+  protected slackMsg() {
+    this._service.getScrollMessages()
+    .subscribe(res => {
+      this.scrollItems = res.messages;
+      this.myItems = res.messages;
+    });
+  }
+
+  protected refresh() {
+    this._service.getScrollMessages().subscribe( res => { this.slackMsg(); });
+   }
 	
 	
 	ngOnChanges(changes: SimpleChanges) {
