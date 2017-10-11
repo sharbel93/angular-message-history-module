@@ -7,133 +7,204 @@
 
 
 import * as i0 from '@angular/core';
-import * as i1 from '../node_modules/angular2-markdown/markdown/markdown.component.ngfactory';
-import * as i2 from 'angular2-markdown/markdown/markdown.component';
-import * as i3 from 'angular2-markdown/markdown/markdown.service';
-import * as i4 from '@angular/http';
-import * as i5 from '@angular/common';
-import * as i6 from 'angular2-moment/date-format.pipe';
+import * as i1 from '@angular/common';
+import * as i2 from '../node_modules/angular2-markdown/markdown/markdown.component.ngfactory';
+import * as i3 from 'angular2-markdown/markdown/markdown.component';
+import * as i4 from 'angular2-markdown/markdown/markdown.service';
+import * as i5 from '@angular/http';
+import * as i6 from 'angular2-moment/time-ago.pipe';
 import * as i7 from '../../src/seed.component';
 import * as i8 from '../node_modules/angular2-virtual-scroll/dist/virtual-scroll.ngfactory';
 import * as i9 from 'angular2-virtual-scroll/dist/virtual-scroll';
 import * as i10 from '../../src/seed.service';
-const styles_SeedComponent:any[] = ['virtual-scroll[_ngcontent-%COMP%], [virtualScroll][_ngcontent-%COMP%] {\n    overflow: hidden;\n    overflow-y: auto;\n    border: 1px solid  rgb(209, 218, 223);\n    height: 75vh;\n    display: block;\n  }\n      .loader[_ngcontent-%COMP%] {\n          height: 4em;\n          display:block;\n          line-height:4em;\n          text-align:center;\n          position:relative;\n         background-color:#F6F6F9;\n        }\n        .loader[_ngcontent-%COMP%]:before {\n          content: \' \';\n          position: absolute;\n          top: 0;\n          left: 0;\n          width: 20%;\n          height: 2px;\n          background: #0029FF;\n          animation: loader-animation 2s ease-out infinite;\n        }\n        @keyframes loader-animation {\n          0% {\n            transform: translate(0%);\n          }\n          100% {\n            transform: translate(500%);\n          }\n        }\n        .text[_ngcontent-%COMP%] {\n          overflow: hidden; \n          white-space: nowrap;\n          text-overflow: ellipsis;\n        }\n        .text[_ngcontent-%COMP%]:hover {\n          white-space: normal;\n          height:auto;\n         overflow: visible;\n        }\n        .row[_ngcontent-%COMP%] {\n          margin-bottom: 15px;\n          \n        }\n\n        #refresh_btn[_ngcontent-%COMP%] {\n          position: absolute;\n          right: 16px;\n        }'];
+const styles_SeedComponent:any[] = ['.loader[_ngcontent-%COMP%] {\n          height: 4em;\n          display:block;\n          line-height:4em;\n          text-align:center;\n          position:relative;\n         background-color:#F6F6F9;\n        }\n        .loader[_ngcontent-%COMP%]:before {\n          content: \' \';\n          position: absolute;\n          top: 0;\n          left: 0;\n          width: 16.5%;\n          height: 3px;\n          background: #0029FF;\n          animation: loader-animation 2s ease-out infinite;\n        }\n        @keyframes loader-animation {\n          0% {\n            transform: translate(0%);\n          }\n          100% {\n            transform: translate(500%);\n          }\n        }\n       \n        .row[_ngcontent-%COMP%] {\n          margin-bottom: 15px;\n          \n        }\n\n        #refresh_btn[_ngcontent-%COMP%] {\n          position: absolute;\n          right: 16px;\n        }\n        #msg[_ngcontent-%COMP%] {\n          position: absolute;\n          left: 100px;\n         }\n         #card1[_ngcontent-%COMP%] {\n          margin-left: 0px;\n          margin-right: 0px;\n          margin-bottom: 10px; \n           position: static; \n          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n          \n          border-radius: 5px; \n        }\n      \n        #mtime[_ngcontent-%COMP%] {\n         position: absolute;\n         right: 16px;\n        }',
+    '../../../node_modules/font-awesome/css/font-awesome.css'];
 export const RenderType_SeedComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:0,
     styles:styles_SeedComponent,data:{}});
-function View_SeedComponent_1(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),35,'div',([] as any[]),
+function View_SeedComponent_3(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'strong',([] as any[]),
       (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n                        '])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),32,'div',[['Markdown',''],['class','card'],['style','background-color:white']],
-      (null as any),(null as any),(null as any),i1.View_MarkdownComponent_0,i1.RenderType_MarkdownComponent)),
-      i0.ɵdid(4308992,(null as any),0,i2.MarkdownComponent,[i3.MarkdownService,i0.ElementRef,
-          i4.Http],(null as any),(null as any)),(_l()(),i0.ɵted(0,['\n                                '])),
-      (_l()(),i0.ɵeld(0,(null as any),0,10,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n                                        '])),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),7,'div',[['class','col-12 col-xs-12 col-sm-12 col-md-12']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n                                                        '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),4,'h5',([] as any[]),(null as any),
-          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,
-          (null as any),(null as any),3,'small',([] as any[]),(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),2,'strong',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['',''])),i0.ɵppd(2),
-      (_l()(),i0.ɵted((null as any),['\n                                        '])),
-      (_l()(),i0.ɵted((null as any),['\n                                '])),(_l()(),
-          i0.ɵted(0,['\n        '])),(_l()(),i0.ɵeld(0,(null as any),0,16,'div',[['class',
-          'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n                                        '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),7,'div',[['class','col-3 col-xs-3 col-sm-3 col-md-3']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n                                                '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),4,'h6',[['class','text-left']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),3,'small',([] as any[]),(null as any),
-          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,
-          (null as any),(null as any),2,'strong',([] as any[]),(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['',''])),i0.ɵppd(2),(_l()(),i0.ɵted((null as any),['\n                                          '])),
-      (_l()(),i0.ɵted((null as any),['\n                                          '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class','col-8 col-xs-8 col-sm-8 col-md-8']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n                                   '])),(_l()(),
-          i0.ɵeld(0,(null as any),(null as any),1,'p',[['class','text']],(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['',''])),(_l()(),i0.ɵted((null as any),['\n                                          '])),
-      (_l()(),i0.ɵted((null as any),['\n                '])),(_l()(),i0.ɵted(0,['\n                     '])),
-      (_l()(),i0.ɵted((null as any),['   \n                ']))],(_ck,_v) => {
-    _ck(_v,3,0);
-  },(_ck,_v) => {
-    const currVal_0:any = i0.ɵunv(_v,12,0,_ck(_v,13,0,i0.ɵnov((<any>_v.parent),0),
-        (_v.context.$implicit.ts * 1000),'fullDate'));
-    _ck(_v,12,0,currVal_0);
-    const currVal_1:any = i0.ɵunv(_v,24,0,_ck(_v,25,0,i0.ɵnov((<any>_v.parent),1),
-        (_v.context.$implicit.ts * 1000),'hh:mmA'));
-    _ck(_v,24,0,currVal_1);
-    const currVal_2:any = _v.context.$implicit.text;
-    _ck(_v,31,0,currVal_2);
-  });
+      i0.ɵted((null as any),['Undefined User']))],(null as any),(null as any));
 }
 function View_SeedComponent_2(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'div',[['class',
-      'loader']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['Loading...']))],(null as any),(null as any));
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),7,'div',[['class',
+      'col-5 col-xs-5 col-sm-5 col-md-5']],(null as any),(null as any),(null as any),
+      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),[' '])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),0,'i',[['aria-hidden','true'],['class',
+          'fa fa-user-circle fa-2x']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i0.ɵted((null as any),[' '])),(_l()(),i0.ɵeld(0,
+      (null as any),(null as any),1,'strong',([] as any[]),(null as any),(null as any),
+      (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['',
+      ''])),(_l()(),i0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_SeedComponent_3)),
+      i0.ɵdid(16384,(null as any),0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,
+          'ngIf']},(null as any))],(_ck,_v) => {
+    const currVal_1:any = ((<any>_v.parent).context.$implicit[2].length == 0);
+    _ck(_v,7,0,currVal_1);
+  },(_ck,_v) => {
+    const currVal_0:any = (<any>_v.parent).context.$implicit[0];
+    _ck(_v,5,0,currVal_0);
+  });
+}
+function View_SeedComponent_4(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'small',([] as any[]),
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵted((null as any),['Undefined phone']))],(null as any),(null as any));
+}
+function View_SeedComponent_5(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'small',([] as any[]),
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵted((null as any),['Undefined location']))],(null as any),(null as any));
+}
+function View_SeedComponent_6(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',[['style',
+      'line-height: 20px; color: rgb(110, 110, 110)']],(null as any),(null as any),
+      (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['',
+      '']))],(null as any),(_ck,_v) => {
+    const currVal_0:any = (<any>_v.parent).context.$implicit[0];
+    _ck(_v,1,0,currVal_0);
+  });
+}
+function View_SeedComponent_1(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),54,'div',([] as any[]),
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵted((null as any),['\n                  \n                        '])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),51,'div',[['Markdown',''],['class','card'],
+          ['id','card1']],(null as any),(null as any),(null as any),i2.View_MarkdownComponent_0,
+          i2.RenderType_MarkdownComponent)),i0.ɵdid(4308992,(null as any),0,i3.MarkdownComponent,
+      [i4.MarkdownService,i0.ElementRef,i5.Http],(null as any),(null as any)),(_l()(),
+      i0.ɵted(0,['\n                        '])),(_l()(),i0.ɵeld(0,(null as any),0,
+      47,'div',[['class','container']],(null as any),(null as any),(null as any),(null as any),
+      (null as any))),(_l()(),i0.ɵted((null as any),['\n\n                        '])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),32,'div',[['class','row']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n                        \n                         '])),(_l()(),i0.ɵand(16777216,
+          (null as any),(null as any),1,(null as any),View_SeedComponent_2)),i0.ɵdid(16384,
+          (null as any),0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,'ngIf']},
+          (null as any)),(_l()(),i0.ɵted((null as any),['\n                         '])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),6,'div',[['class','col-2 col-xs-2 col-sm-2 col-md-2']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),5,'h6',[['id','mphone']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,
+          (null as any),(null as any),0,'i',[['aria-hidden','true'],['class','fa fa-phone']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),1,'small',([] as any[]),(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['',''])),(_l()(),i0.ɵand(16777216,(null as any),(null as any),1,(null as any),
+          View_SeedComponent_4)),i0.ɵdid(16384,(null as any),0,i1.NgIf,[i0.ViewContainerRef,
+          i0.TemplateRef],{ngIf:[0,'ngIf']},(null as any)),(_l()(),i0.ɵted((null as any),
+          ['\n                         '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          6,'div',[['class','col-2 col-xs-2 col-sm-2 col-md-2']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),5,'h6',[['id','mlocation']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          0,'i',[['aria-hidden','true'],['class','fa fa-map-marker']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,
+          (null as any),(null as any),1,'small',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['',''])),(_l()(),i0.ɵand(16777216,(null as any),(null as any),1,(null as any),
+          View_SeedComponent_5)),i0.ɵdid(16384,(null as any),0,i1.NgIf,[i0.ViewContainerRef,
+          i0.TemplateRef],{ngIf:[0,'ngIf']},(null as any)),(_l()(),i0.ɵted((null as any),
+          ['\n                          '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          10,'div',[['class','col-3 col-xs-3 col-sm-3 col-md-3']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),9,'h6',[['id','mtime']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          7,'small',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),6,'strong',
+          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['',' at ',' • '])),i0.ɵppd(2),i0.ɵppd(2),(_l()(),
+          i0.ɵeld(0,(null as any),(null as any),0,'i',[['aria-hidden','true'],['class',
+              'fa fa-clock-o']],(null as any),(null as any),(null as any),(null as any),
+              (null as any))),(_l()(),i0.ɵted((null as any),[' ',''])),i0.ɵpid(131072,
+          i6.TimeAgoPipe,[i0.ChangeDetectorRef,i0.NgZone]),(_l()(),i0.ɵted((null as any),
+          [' '])),(_l()(),i0.ɵted((null as any),['\n                         '])),
+      (_l()(),i0.ɵted((null as any),['\n                         '])),(_l()(),i0.ɵeld(0,
+          (null as any),(null as any),10,'div',[['class','row']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n                         '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          7,'div',[['class','col-12 col-xs-12 col-sm-12 col-md-12 ']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n                                         '])),(_l()(),i0.ɵand(16777216,
+          (null as any),(null as any),1,(null as any),View_SeedComponent_6)),i0.ɵdid(16384,
+          (null as any),0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,'ngIf']},
+          (null as any)),(_l()(),i0.ɵted((null as any),['\n                                                 '])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',[['class','text '],['style',
+          'line-height: 20px; color: rgb(110, 110, 110)']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['',''])),(_l()(),i0.ɵted((null as any),['\n                                         \n                                 '])),
+      (_l()(),i0.ɵted((null as any),['\n         '])),(_l()(),i0.ɵted((null as any),
+          ['\n                        '])),(_l()(),i0.ɵted(0,['\n                      '])),
+      (_l()(),i0.ɵted((null as any),['\n\n                ']))],(_ck,_v) => {
+    _ck(_v,3,0);
+    const currVal_0:any = (_v.context.$implicit[2].length == 1);
+    _ck(_v,10,0,currVal_0);
+    const currVal_2:any = (_v.context.$implicit[2].length == 0);
+    _ck(_v,18,0,currVal_2);
+    const currVal_4:any = (_v.context.$implicit[2].length == 0);
+    _ck(_v,26,0,currVal_4);
+    const currVal_8:any = (_v.context.$implicit[2].length == 0);
+    _ck(_v,46,0,currVal_8);
+  },(_ck,_v) => {
+    const currVal_1:any = _v.context.$implicit[2];
+    _ck(_v,16,0,currVal_1);
+    const currVal_3:any = _v.context.$implicit[1];
+    _ck(_v,24,0,currVal_3);
+    const currVal_5:any = i0.ɵunv(_v,32,0,_ck(_v,33,0,i0.ɵnov((<any>_v.parent),0),
+        (_v.context.$implicit[4] * 1000),'MMM dd'));
+    const currVal_6:any = i0.ɵunv(_v,32,1,_ck(_v,34,0,i0.ɵnov((<any>_v.parent),0),
+        (_v.context.$implicit[4] * 1000),'HH:mm'));
+    _ck(_v,32,0,currVal_5,currVal_6);
+    const currVal_7:any = i0.ɵunv(_v,36,0,i0.ɵnov(_v,37).transform((_v.context.$implicit[4] * 1000)));
+    _ck(_v,36,0,currVal_7);
+    const currVal_9:any = _v.context.$implicit[3];
+    _ck(_v,49,0,currVal_9);
+  });
+}
+function View_SeedComponent_7(_l:any):i0.ɵViewDefinition {
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),0,'i',[['aria-hidden',
+      'true'],['class','fa fa-refresh fa-spin']],(null as any),(null as any),(null as any),
+      (null as any),(null as any)))],(null as any),(null as any));
 }
 export function View_SeedComponent_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[i0.ɵpid(0,i5.DatePipe,[i0.LOCALE_ID]),i0.ɵpid(0,i6.DateFormatPipe,
-      ([] as any[])),(_l()(),i0.ɵted((null as any),['\n	 '])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),33,'div',[['class','container rounded'],['style','border: 2px solid black; margin-top: 20px;']],
+  return i0.ɵvid(0,[i0.ɵpid(0,i1.DatePipe,[i0.LOCALE_ID]),(_l()(),i0.ɵted((null as any),
+      ['\n	 '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),39,'div',[['class',
+      'container '],['style','margin-top: 20px;']],(null as any),(null as any),(null as any),
+      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),36,'div',[['class','row']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+      ['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),2,'div',[['class','col-12 col-md-12 col-sm-12']],
       (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n\n        '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      7,'div',[['class','row'],['style','margin-top: 10px; margin-bottom: 50px;']],
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n                '])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),4,'div',[['class','col-12 col-md-12 col-sm-12']],(null as any),
-      (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-      ['\n                               '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      1,'button',[['class','btn btn-primary '],['id','refresh_btn'],['type','button']],
-      (null as any),[[(null as any),'click']],(_v,en,$event) => {
-        var ad:boolean = true;
-        var _co:i7.SeedComponent = _v.component;
-        if (('click' === en)) {
-          const pd_0:any = ((<any>_co.refresh()) !== false);
-          ad = (pd_0 && ad);
-        }
-        return ad;
-      },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Refresh'])),
-      (_l()(),i0.ɵted((null as any),['\n                '])),(_l()(),i0.ɵted((null as any),
-          ['\n        '])),(_l()(),i0.ɵted((null as any),['\n\n        '])),(_l()(),
-          i0.ɵeld(0,(null as any),(null as any),21,'div',[['class','row']],(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n                '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),18,
-          'div',[['class','col-12 col-md-12 col-sm-12']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['\n                                '])),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),15,'virtual-scroll',[['style','height: 75vh; \n                                display: block; background-color: #D3D3D3;  ']],
-          [[4,'overflow-y',(null as any)]],[[(null as any),'update'],[(null as any),
-              'change'],[(null as any),'end'],[(null as any),'scroll']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i7.SeedComponent = _v.component;
-            if (('scroll' === en)) {
-              const pd_0:any = ((<any>i0.ɵnov(_v,19).onScroll()) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('update' === en)) {
-              const pd_1:any = ((<any>(_co.scrollItems = $event)) !== false);
-              ad = (pd_1 && ad);
-            }
-            if (('change' === en)) {
-              const pd_2:any = ((<any>(_co.indices = $event)) !== false);
-              ad = (pd_2 && ad);
-            }
-            if (('end' === en)) {
-              const pd_3:any = ((<any>_co.fetchMore($event)) !== false);
-              ad = (pd_3 && ad);
-            }
-            return ad;
-          },i8.View_VirtualScrollComponent_0,i8.RenderType_VirtualScrollComponent)),
+      i0.ɵted((null as any),['\n              '])),(_l()(),i0.ɵted((null as any),['\n'])),
+      (_l()(),i0.ɵted((null as any),['\n        '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),29,'div',[['class','row']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n                '])),
+      (_l()(),i0.ɵeld(0,(null as any),(null as any),26,'div',[['class','col-12 col-md-12 col-sm-12']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n                                '])),(_l()(),
+          i0.ɵeld(0,(null as any),(null as any),12,'virtual-scroll',[['style','height: 75vh; \n                                display: block; background-color: #FFFFFF;  ']],
+              [[4,'overflow-y',(null as any)]],[[(null as any),'update'],[(null as any),
+                  'change'],[(null as any),'end'],[(null as any),'scroll']],(_v,en,
+                  $event) => {
+                var ad:boolean = true;
+                var _co:i7.SeedComponent = _v.component;
+                if (('scroll' === en)) {
+                  const pd_0:any = ((<any>i0.ɵnov(_v,15).onScroll()) !== false);
+                  ad = (pd_0 && ad);
+                }
+                if (('update' === en)) {
+                  const pd_1:any = ((<any>(_co.scrollItems = $event)) !== false);
+                  ad = (pd_1 && ad);
+                }
+                if (('change' === en)) {
+                  const pd_2:any = ((<any>(_co.indices = $event)) !== false);
+                  ad = (pd_2 && ad);
+                }
+                if (('end' === en)) {
+                  const pd_3:any = ((<any>_co.fetchMore($event)) !== false);
+                  ad = (pd_3 && ad);
+                }
+                return ad;
+              },i8.View_VirtualScrollComponent_0,i8.RenderType_VirtualScrollComponent)),
       i0.ɵdid(770048,(null as any),1,i9.VirtualScrollComponent,[i0.ElementRef],{items:[0,
           'items']},{update:'update',change:'change',end:'end'}),i0.ɵqud(335544320,
           1,{containerElementRef:0}),(_l()(),i0.ɵted(0,['  \n                                \n'])),
@@ -144,33 +215,50 @@ export function View_SeedComponent_0(_l:any):i0.ɵViewDefinition {
           (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
           ['\n                        '])),(_l()(),i0.ɵand(16777216,(null as any),
           (null as any),1,(null as any),View_SeedComponent_1)),i0.ɵdid(802816,(null as any),
-          0,i5.NgForOf,[i0.ViewContainerRef,i0.TemplateRef,i0.IterableDiffers],{ngForOf:[0,
+          0,i1.NgForOf,[i0.ViewContainerRef,i0.TemplateRef,i0.IterableDiffers],{ngForOf:[0,
               'ngForOf']},(null as any)),(_l()(),i0.ɵted((null as any),['\n                '])),
-      (_l()(),i0.ɵted((null as any),['\n                '])),(_l()(),i0.ɵted(0,['\n                '])),
-      (_l()(),i0.ɵand(16777216,(null as any),0,1,(null as any),View_SeedComponent_2)),
-      i0.ɵdid(16384,(null as any),0,i5.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,
-          'ngIf']},(null as any)),(_l()(),i0.ɵted(0,['\n        '])),(_l()(),i0.ɵted((null as any),
-          [' \n                '])),(_l()(),i0.ɵted((null as any),['\n        '])),
-      (_l()(),i0.ɵted((null as any),['\n\n        '])),(_l()(),i0.ɵted((null as any),
-          ['\n		\n	']))],(_ck,_v) => {
+      (_l()(),i0.ɵted((null as any),['\n                '])),(_l()(),i0.ɵted(0,['\n                \n        '])),
+      (_l()(),i0.ɵted((null as any),[' \n        '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),9,'div',[['class','row'],['style','margin-top: 10px; margin-bottom: 50px;']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n        '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),6,'div',[['class','col-12 col-md-12 col-sm-12']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n          '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),3,'button',
+          [['class','btn btn-primary '],['id','refresh_btn'],['type','button']],(null as any),
+          [[(null as any),'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:i7.SeedComponent = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>_co.refreshTimeout()) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Refresh   '])),
+      (_l()(),i0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_SeedComponent_7)),
+      i0.ɵdid(16384,(null as any),0,i1.NgIf,[i0.ViewContainerRef,i0.TemplateRef],{ngIf:[0,
+          'ngIf']},(null as any)),(_l()(),i0.ɵted((null as any),['\n        '])),(_l()(),
+          i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),[' \n                '])),
+      (_l()(),i0.ɵted((null as any),['\n        '])),(_l()(),i0.ɵted((null as any),
+          ['\n\n        '])),(_l()(),i0.ɵted((null as any),['\n		\n	']))],(_ck,_v) => {
     var _co:i7.SeedComponent = _v.component;
     const currVal_1:any = _co.buffer;
-    _ck(_v,19,0,currVal_1);
-    const currVal_2:any = _co.myItems;
-    _ck(_v,27,0,currVal_2);
+    _ck(_v,15,0,currVal_1);
+    const currVal_2:any = _co.scrollItems;
+    _ck(_v,23,0,currVal_2);
     const currVal_3:any = _co.loading;
-    _ck(_v,32,0,currVal_3);
+    _ck(_v,35,0,currVal_3);
   },(_ck,_v) => {
-    const currVal_0:any = (i0.ɵnov(_v,19).parentScroll? 'hidden': 'auto');
-    _ck(_v,18,0,currVal_0);
+    const currVal_0:any = (i0.ɵnov(_v,15).parentScroll? 'hidden': 'auto');
+    _ck(_v,14,0,currVal_0);
   });
 }
 export function View_SeedComponent_Host_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'seed-component',
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'messages-history',
       ([] as any[]),(null as any),(null as any),(null as any),View_SeedComponent_0,
       RenderType_SeedComponent)),i0.ɵdid(573440,(null as any),0,i7.SeedComponent,[i10.SeedService],
       (null as any),(null as any))],(null as any),(null as any));
 }
-export const SeedComponentNgFactory:i0.ComponentFactory<i7.SeedComponent> = i0.ɵccf('seed-component',
+export const SeedComponentNgFactory:i0.ComponentFactory<i7.SeedComponent> = i0.ɵccf('messages-history',
     i7.SeedComponent,View_SeedComponent_Host_0,{items:'items'},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMiLCJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMuU2VlZENvbXBvbmVudC5odG1sIiwibmc6Ly8vaG9tZS9zaGFhbi9hbmd1bGFyLW1lc3NhZ2UtaGlzdG9yeS1tb2R1bGUvc3JjL3NlZWQuY29tcG9uZW50LnRzLlNlZWRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcblx0IDxkaXYgY2xhc3M9XCJjb250YWluZXIgcm91bmRlZFwiIHN0eWxlPVwiYm9yZGVyOiAycHggc29saWQgYmxhY2s7IG1hcmdpbi10b3A6IDIwcHg7XCI+XG5cbiAgICAgICAgPGRpdiBjbGFzcz1cInJvd1wiIHN0eWxlPVwibWFyZ2luLXRvcDogMTBweDsgbWFyZ2luLWJvdHRvbTogNTBweDtcIiA+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC0xMiBjb2wtbWQtMTIgY29sLXNtLTEyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPVwiYnV0dG9uXCIgY2xhc3M9XCJidG4gYnRuLXByaW1hcnkgXCIgaWQ9XCJyZWZyZXNoX2J0blwiICAoY2xpY2spPVwicmVmcmVzaCgpXCI+UmVmcmVzaDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC0xMiBjb2wtbWQtMTIgY29sLXNtLTEyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx2aXJ0dWFsLXNjcm9sbFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBbaXRlbXNdPVwiYnVmZmVyXCIgICh1cGRhdGUpPVwic2Nyb2xsSXRlbXMgPSAkZXZlbnRcIiAoY2hhbmdlKT1cImluZGljZXMgPSAkZXZlbnRcIiAoZW5kKT1cImZldGNoTW9yZSgkZXZlbnQpXCIgIHN0eWxlPVwiaGVpZ2h0OiA3NXZoOyBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7IGJhY2tncm91bmQtY29sb3I6ICNEM0QzRDM7ICBcIj4gIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbjxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLTEyIGNvbC14cy0xMiBjb2wtc20tMTIgY29sLW1kLTEyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2ICpuZ0Zvcj1cImxldCBpdGVtIG9mIG15SXRlbXNcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjYXJkXCIgIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjp3aGl0ZVwiIE1hcmtkb3duPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC0xMiBjb2wteHMtMTIgY29sLXNtLTEyIGNvbC1tZC0xMlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDU+PHNtYWxsPjxzdHJvbmc+e3tpdGVtLnRzICogMTAwMCB8IGRhdGU6ICdmdWxsRGF0ZSd9fTwvc3Ryb25nPjwvc21hbGw+PC9oNT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLTMgY29sLXhzLTMgY29sLXNtLTMgY29sLW1kLTNcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNiBjbGFzcz1cInRleHQtbGVmdFwiPjxzbWFsbD48c3Ryb25nPnt7aXRlbS50cyAqIDEwMDAgfCBhbURhdGVGb3JtYXQ6J2hoOm1tQSd9fTwvc3Ryb25nPjwvc21hbGw+PC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC04IGNvbC14cy04IGNvbC1zbS04IGNvbC1tZC04XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwICBjbGFzcz1cInRleHRcIj57e2l0ZW0udGV4dH19PC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICA8L2Rpdj4gICBcbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2ICpuZ0lmPVwibG9hZGluZ1wiIGNsYXNzPVwibG9hZGVyXCI+TG9hZGluZy4uLjwvZGl2PlxuICAgICAgICA8L3ZpcnR1YWwtc2Nyb2xsPiBcbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPC9kaXY+XG5cdFx0XG5cdCIsIjxzZWVkLWNvbXBvbmVudD48L3NlZWQtY29tcG9uZW50PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ2lCd0I7TUFBQSx3RUFBa0M7YUFBQSxnREFDbEM7TUFBQTtNQUFBO2FBQUE7aUJBQUEsK0JBQTJEO01BQ25EO1VBQUEsNENBQWlCO1VBQUEsaURBQ1Q7VUFBQTtVQUFBO01BQWtEO01BQ2xDO1VBQUEsMERBQUk7VUFBQTtVQUFBLDRDQUFPO1VBQUE7VUFBQSw4QkFBUTtNQUEyRDtNQUN4Rix1RUFDUjtpQkFBQSxvQkFDOUI7VUFBQTtNQUFpQjtNQUNlO1VBQUE7TUFBOEM7TUFDdEM7VUFBQTtNQUFzQjtVQUFBLDBEQUFPO1VBQUE7VUFBQSw0Q0FBUTtVQUFBLHFCQUFnRTtNQUNyRztNQUNOO1VBQUE7TUFBOEMsMEVBQ3JEO2lCQUFBO2NBQUEsMERBQWlCO1VBQUEsVUFBaUI7TUFDckIsdURBQzFCO01BQ0s7SUFkSDs7SUFHbUQ7UUFBQTtJQUFBO0lBS1U7UUFBQTtJQUFBO0lBR2pDO0lBQUE7Ozs7b0JBT3BDO01BQUE7TUFBb0M7Ozs7cUJBcENwRCx5Q0FDRTtNQUFBO01BQUEsd0VBQWtGO2FBQUEsa0NBRTVFO01BQUE7TUFBQSx3RUFBaUU7YUFBQSx3Q0FDekQ7TUFBQTtNQUFBLDBEQUF3QztNQUFBLHdDQUN6QjtNQUFBO01BQUE7UUFBQTtRQUFBO1FBQWlFO1VBQUE7VUFBQTtRQUFBO1FBQWpFO01BQUEsZ0NBQXFGO01BQWdCLHVEQUM5RztVQUFBLGlCQUNSLGlEQUVOO2lCQUFBO2NBQUEsMERBQWlCO1VBQUEseUJBQ1Q7VUFBQTtVQUFBLDRDQUF3QztVQUFBLHlDQUN4QjtVQUFBO1VBQUE7Y0FBQTtZQUFBO1lBQUE7WUFBQTtjQUFBO2NBQUE7WUFBQTtZQUNrQjtjQUFBO2NBQUE7WUFBQTtZQUFnQztjQUFBO2NBQUE7WUFBQTtZQUE0QjtjQUFBO2NBQUE7WUFBQTtZQUQ5RTtVQUFBO2FBQUE7VUFBQTtVQUFBLDJCQUU4QztNQUU5RTtVQUFBLDRDQUFpQjtVQUFBLHlCQUNEO1VBQUE7VUFBQSw0Q0FBa0Q7VUFBQSxpQ0FDMUM7VUFBQSw0REFBQTtVQUFBO2NBQUEsMkJBZ0JGO01BQ0EsdURBQ0E7TUFDTjthQUFBO1VBQUEsd0JBQW9ELG1DQUMzQztVQUFBLDBCQUNIO01BQ1IsaURBRUE7VUFBQTs7SUE3QmtCO0lBREEsWUFDQSxTQURBO0lBTUg7SUFBTCxZQUFLLFNBQUw7SUFtQkg7SUFBTCxZQUFLLFNBQUw7O0lBekJnQjtJQUFBLFlBQUEsU0FBQTs7OztvQkNYaEM7TUFBQTs4QkFBQSxVQUFBO01BQUE7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvc2hhYW4vYW5ndWxhci1tZXNzYWdlLWhpc3RvcnktbW9kdWxlL3NyYy9zZWVkLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMiLCJuZzovLy9ob21lL3NoYWFuL2FuZ3VsYXItbWVzc2FnZS1oaXN0b3J5LW1vZHVsZS9zcmMvc2VlZC5jb21wb25lbnQudHMuU2VlZENvbXBvbmVudC5odG1sIiwibmc6Ly8vaG9tZS9zaGFhbi9hbmd1bGFyLW1lc3NhZ2UtaGlzdG9yeS1tb2R1bGUvc3JjL3NlZWQuY29tcG9uZW50LnRzLlNlZWRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcblx0IDxkaXYgY2xhc3M9XCJjb250YWluZXIgXCIgc3R5bGU9XCJtYXJnaW4tdG9wOiAyMHB4O1wiPlxuPGRpdiBjbGFzcz1cInJvd1wiPlxuPGRpdiBjbGFzcz1cImNvbC0xMiBjb2wtbWQtMTIgY29sLXNtLTEyXCI+XG4gICAgICAgICAgICAgIDwhLS0gPGRpdiAqbmdJZj1cImxvYWRpbmdcIiBjbGFzcz1cImxvYWRlclwiPkxvYWRpbmcuLi48L2Rpdj4gLS0+XG48L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtMTIgY29sLW1kLTEyIGNvbC1zbS0xMlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dmlydHVhbC1zY3JvbGxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgW2l0ZW1zXT1cImJ1ZmZlclwiICAodXBkYXRlKT1cInNjcm9sbEl0ZW1zID0gJGV2ZW50XCIgKGNoYW5nZSk9XCJpbmRpY2VzID0gJGV2ZW50XCIgKGVuZCk9XCJmZXRjaE1vcmUoJGV2ZW50KVwiIHN0eWxlPVwiaGVpZ2h0OiA3NXZoOyBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7IGJhY2tncm91bmQtY29sb3I6ICNGRkZGRkY7ICBcIj4gIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbjxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLTEyIGNvbC14cy0xMiBjb2wtc20tMTIgY29sLW1kLTEyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2ICpuZ0Zvcj1cImxldCBpdGVtIG9mIHNjcm9sbEl0ZW1zXCI+XG4gICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjYXJkXCIgaWQ9XCJjYXJkMVwiIE1hcmtkb3duPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLTUgY29sLXhzLTUgY29sLXNtLTUgY29sLW1kLTVcIiAqbmdJZj1cIml0ZW1bMl0ubGVuZ3RoID09IDFcIj4gPGkgY2xhc3M9XCJmYSBmYS11c2VyLWNpcmNsZSBmYS0yeFwiICBhcmlhLWhpZGRlbj1cInRydWVcIj48L2k+IDxzdHJvbmc+e3tpdGVtWzBdfX08L3N0cm9uZz48c3Ryb25nICpuZ0lmPVwiaXRlbVsyXS5sZW5ndGggPT0gMFwiPlVuZGVmaW5lZCBVc2VyPC9zdHJvbmc+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC0yIGNvbC14cy0yIGNvbC1zbS0yIGNvbC1tZC0yXCIgPjxoNiBpZD1cIm1waG9uZVwiPjxpIGNsYXNzPVwiZmEgZmEtcGhvbmVcIiBhcmlhLWhpZGRlbj1cInRydWVcIj48L2k+PHNtYWxsPnt7aXRlbVsyXX19PC9zbWFsbD48c21hbGwgKm5nSWY9XCJpdGVtWzJdLmxlbmd0aCA9PSAwXCI+VW5kZWZpbmVkIHBob25lPC9zbWFsbD48L2g2PjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtMiBjb2wteHMtMiBjb2wtc20tMiBjb2wtbWQtMlwiPjxoNiBpZD1cIm1sb2NhdGlvblwiPjxpIGNsYXNzPVwiZmEgZmEtbWFwLW1hcmtlclwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPjwvaT48c21hbGwgPnt7aXRlbVsxXX19PC9zbWFsbD48c21hbGwgKm5nSWY9XCJpdGVtWzJdLmxlbmd0aCA9PSAwXCI+VW5kZWZpbmVkIGxvY2F0aW9uPC9zbWFsbD48L2g2PjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLTMgY29sLXhzLTMgY29sLXNtLTMgY29sLW1kLTNcIj48aDYgaWQ9XCJtdGltZVwiPjxzbWFsbD48c3Ryb25nPnt7aXRlbVs0XSAqIDEwMDAgfCBkYXRlOidNTU0gZGQnfX0gYXQge3tpdGVtWzRdICogMTAwMCB8IGRhdGU6J0hIOm1tJ319ICZidWxsOyA8aSBjbGFzcz1cImZhIGZhLWNsb2NrLW9cIiBhcmlhLWhpZGRlbj1cInRydWVcIj48L2k+IHt7aXRlbVs0XSogMTAwMCB8IGFtVGltZUFnbyB9fTwvc3Ryb25nPjwvc21hbGw+IDwvaDY+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtMTIgY29sLXhzLTEyIGNvbC1zbS0xMiBjb2wtbWQtMTIgXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwICpuZ0lmPVwiaXRlbVsyXS5sZW5ndGggPT0gMFwiIHN0eWxlPVwibGluZS1oZWlnaHQ6IDIwcHg7IGNvbG9yOiByZ2IoMTEwLCAxMTAsIDExMClcIj57e2l0ZW1bMF19fTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cInRleHQgXCIgIHN0eWxlPVwibGluZS1oZWlnaHQ6IDIwcHg7IGNvbG9yOiByZ2IoMTEwLCAxMTAsIDExMClcIj57e2l0ZW1bM119fTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICBcbiAgICAgICAgPC92aXJ0dWFsLXNjcm9sbD4gXG4gICAgICAgIDxkaXYgY2xhc3M9XCJyb3dcIiBzdHlsZT1cIm1hcmdpbi10b3A6IDEwcHg7IG1hcmdpbi1ib3R0b206IDUwcHg7XCI+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtMTIgY29sLW1kLTEyIGNvbC1zbS0xMlwiPlxuICAgICAgICAgIDxidXR0b24gdHlwZT1cImJ1dHRvblwiIGNsYXNzPVwiYnRuIGJ0bi1wcmltYXJ5IFwiIGlkPVwicmVmcmVzaF9idG5cIiAgKGNsaWNrKT1cInJlZnJlc2hUaW1lb3V0KClcIj5SZWZyZXNoICZlbnNwOyA8aSAqbmdJZj1cImxvYWRpbmdcIiBjbGFzcz1cImZhIGZhLXJlZnJlc2ggZmEtc3BpblwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPjwvaT48L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG48L2Rpdj4gXG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDwvZGl2PlxuXHRcdFxuXHQiLCI8bWVzc2FnZXMtaGlzdG9yeT48L21lc3NhZ2VzLWhpc3Rvcnk+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ3FCNEw7TUFBQSx3RUFBb0M7YUFBQTs7O29CQUF2TTtNQUFBO01BQUEsOEJBQTBFLHNDQUFDO2FBQUE7VUFBQTtVQUFBLGdCQUEyRCxzQ0FBQztNQUFBO01BQUEsNENBQVE7TUFBQSxNQUFvQjthQUFBO1VBQUE7SUFBUTtJQUFSLFdBQVEsU0FBUjs7SUFBcEI7SUFBQTs7OztvQkFDUjtNQUFBLHdFQUFtQzthQUFBOzs7b0JBQzNCO01BQUEsd0VBQW1DO2FBQUE7OztvQkFLbEs7TUFBQTtNQUFBLDRDQUFvRjtNQUFBO0lBQUE7SUFBQTs7OztvQkFkckc7TUFBQSx3RUFBc0M7YUFBQSxvRUFFdEM7YUFBQTtVQUFBO3lDQUFBLFVBQUE7TUFBQSx3RUFBc0M7YUFBQSxvQ0FDdEM7TUFBQTtNQUFBLGdCQUF1QjtNQUV2QjtVQUFBLDBEQUFpQjtVQUFBLDREQUVoQjtVQUFBLDBFQUFBO1VBQUE7VUFBQSxlQUFvTztNQUNwTztVQUFBO01BQStDO1VBQUEsMERBQWdCO1VBQUE7VUFBQTtNQUE4QztVQUFBLDBEQUFPO1VBQUEsVUFBbUI7VUFBQSw4QkFBQTt3QkFBQSxtQ0FBcUU7VUFBQSxrQ0FDNU07VUFBQTtVQUFBLDRDQUE4QztVQUFBO1VBQUEsOEJBQW1CO1VBQUE7VUFBQSwwREFBbUQ7VUFBQTtVQUFBLDRDQUFRO1VBQUEsVUFBbUI7VUFBQSw4QkFBQTt3QkFBQSxtQ0FBd0U7VUFBQSxtQ0FDdE47VUFBQTtVQUFBLDRDQUE4QztVQUFBO1VBQUEsOEJBQWU7VUFBQTtVQUFBLGdCQUFPO1VBQUE7TUFBUSx3RUFBK0U7aUJBQUE7Y0FBQTtjQUFBLGdCQUFnRDt5QkFBQSxrQ0FBZ0Q7VUFBQSxRQUFZO01BQ2xRLGdFQUNOO1VBQUE7VUFBQSw0Q0FBaUI7VUFBQSxrQ0FDakI7VUFBQTtVQUFBLDBEQUFtRDtVQUFBLGtEQUNuQztVQUFBLDBFQUFBO1VBQUE7VUFBQSxlQUFtRztNQUMzRjtVQUFBO1VBQUEsNENBQXVFO1VBQUEsVUFBZTtNQUVoRyxnREFDeEI7VUFBQSxpQ0FDZTtNQUNGO0lBbEJKO0lBSytDO0lBQTlDLFlBQThDLFNBQTlDO0lBQzhJO0lBQVAsWUFBTyxTQUFQO0lBQ2U7SUFBUCxZQUFPLFNBQVA7SUFLNUg7SUFBSCxZQUFHLFNBQUg7O0lBTm9HO0lBQUE7SUFDUTtJQUFBO0lBQy9DO1FBQUE7SUFBQTtRQUFBO0lBQUE7SUFBK0g7SUFBQTtJQUs3RztJQUFBOzs7O29CQWNIO01BQUE7TUFBQTs7OzBEQTNDckg7TUFBQSxXQUNFO01BQUE7TUFBQSw4QkFBa0QsdUNBQ3BEO2FBQUE7VUFBQSwwREFBaUI7TUFBQSxTQUNqQjtNQUFBLHdFQUF3QzthQUFBLHNDQUNtQztNQUNyRSwrQ0FDRTtVQUFBO1VBQUEsOEJBQWlCO01BQ1Q7VUFBQTtNQUF3Qyx1RUFDeEI7aUJBQUE7Y0FBQTtrQkFBQTt3QkFBQTtnQkFBQTtnQkFBQTtnQkFBQTtrQkFBQTtrQkFBQTtnQkFBQTtnQkFDa0I7a0JBQUE7a0JBQUE7Z0JBQUE7Z0JBQWdDO2tCQUFBO2tCQUFBO2dCQUFBO2dCQUE0QjtrQkFBQTtrQkFBQTtnQkFBQTtnQkFEOUU7Y0FBQTthQUFBO1VBQUE7VUFBQSwyQkFFOEM7TUFFOUU7VUFBQSw0Q0FBaUI7VUFBQSx5QkFDRDtVQUFBO1VBQUEsNENBQWtEO1VBQUEsaUNBQzFDO1VBQUEsNERBQUE7VUFBQTtjQUFBLDJCQXNCRjtNQUNBLHVEQUNBO01BRUcsZ0RBQ2pCO1VBQUE7VUFBQTtNQUFnRSwrQ0FDaEU7VUFBQTtVQUFBLDBEQUF3QztVQUFBLG1CQUN0QztVQUFBO1VBQUE7WUFBQTtZQUFBO1lBQWlFO2NBQUE7Y0FBQTtZQUFBO1lBQWpFO1VBQUEsZ0NBQTRGO01BQWU7YUFBQTtVQUFBLHdCQUFpRiwrQ0FDeEw7aUJBQUEsd0JBQ1I7TUFDZ0IsK0NBQ1I7VUFBQSxtQkFFQTs7SUF4Q2tCO0lBREEsWUFDQSxTQURBO0lBTUg7SUFBTCxZQUFLLFNBQUw7SUE2QmdHO0lBQUgsWUFBRyxTQUFIOztJQW5DckY7SUFBQSxZQUFBLFNBQUE7Ozs7b0JDUmhDO01BQUE7OEJBQUEsVUFBQTtNQUFBOzs7In0=

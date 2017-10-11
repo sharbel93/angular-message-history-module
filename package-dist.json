@@ -1,8 +1,8 @@
 {
 	"name": "angular-message-history-module",
-	"version": "1.1.2",
+	"version": "1.2.2",
 	"description": "virtual scrollmessages based on slack messages history",
-	"main": "bundles/angular-message-history-module.umd.min.js",
+	"main": "dist/index.js",
 	"module": "index.js",
 	"typings": "index.d.ts",
 	"keywords": [
@@ -25,13 +25,14 @@
 	},
 	"peerDependencies": {
 		"reflect-metadata": "^0.1.10",
-		"@angular/common": "^4.3.6",
-		"@angular/core": "^4.3.6",
-		"@angular/http": "^4.3.6",
-		"@angular/platform-browser": "^4.3.6",
+		"@angular/common": "^4.4.4",
+		"@angular/core": "^4.4.4",
+		"@angular/http": "^4.4.4",
+		"@angular/platform-browser": "^4.4.4",
 		"angular2-markdown": "^1.6.0",
 		"angular2-moment": "^1.7.0 ",
 		"angular2-virtual-scroll": "^0.2.2",
+		"font-awesome": "^4.7.0",
 		"rxjs": "^5.4.3",
 		"zone.js": "^0.8.17"
 	}
